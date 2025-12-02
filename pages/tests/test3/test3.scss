@@ -1,0 +1,93 @@
+// 마우스 커서 바꾸기 이전 실험
+// 커서 경로 지정 방법
+* {
+}
+
+body {
+  margin: 0;
+  // ㅇㄴ왜 커서 안 먹힘;
+  // cursor: url(../source/test_logo.svg);
+  cursor: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.hover-container {
+  // width: 50%;
+  // aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // box-sizing: border-box;
+  width: 50%;
+  background-color: lightcyan;
+  // min-width: max-content;
+  border-radius: 1rem;
+}
+
+#custom-cursor {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 2px;
+  height: 2px;
+
+  pointer-events: none;
+  background: #00a2ff;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+
+  // 투명도 값을 0으로 해서 호버가 됐을떄 나오게 함
+  opacity: 0;
+  transform: scale(0.3);
+  transition: transform 0.5s;
+}
+
+#custom-cursor.zoom {
+  transform: scale(1);
+}
+
+body:hover #custom-cursor {
+  // 호버가 됐을 때 불투명하게 바뀜
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#custom-cursor:after {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 1em;
+  height: 1em;
+  // margin: 50px 0 70px 65px;
+  overflow: hidden;
+  content: '';
+  background: #00a2ff;
+  // background-color: #0033ab;
+  // border: 2px solid #c62323;
+  // border-radius: 50%;
+  // 면 채움
+  box-shadow: 0 0 0 1em #00a2ff, 0 1em 0 1em #00a2ff,
+    -2.5em 1.5em 0 0.5em #00a2ff, 2.5em 1.5em 0 0.5em #00a2ff,
+    -3em -3em 0 0 #00a2ff, 3em -3em 0 0 #00a2ff, -2em -2em 0 0 #00a2ff,
+    2em -2em 0 0 #00a2ff, -3em -1em 0 0 #00a2ff, -2em -1em 0 0 #00a2ff,
+    2em -1em 0 0 #00a2ff, 3em -1em 0 0 #00a2ff, -4em 0 0 0 #00a2ff,
+    -3em 0 0 0 #00a2ff, 3em 0 0 0 #00a2ff, 4em 0 0 0 #00a2ff,
+    -5em 1em 0 0 #00a2ff, -4em 1em 0 0 #00a2ff, 4em 1em 0 0 #00a2ff,
+    5em 1em 0 0 #00a2ff, -5em 2em 0 0 #00a2ff, 5em 2em 0 0 #00a2ff,
+    -5em 3em 0 0 #00a2ff, -3em 3em 0 0 #00a2ff, 3em 3em 0 0 #00a2ff,
+    5em 3em 0 0 #00a2ff, -2em 4em 0 0 #00a2ff, -1em 4em 0 0 #00a2ff,
+    1em 4em 0 0 #00a2ff, 2em 4em 0 0 #00a2ff;
+
+  transform: translate(-50%, -50%);
+}
