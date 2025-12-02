@@ -1,0 +1,78 @@
+// 마우스 커서 바꾸기 이전 실험
+// 커서 경로 지정 방법
+* {
+}
+
+body {
+  margin: 0;
+  // ㅇㄴ왜 커서 안 먹힘;
+  // cursor: url(../source/test_logo.svg);
+  cursor: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.hover-container {
+  // width: 50%;
+  // aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // box-sizing: border-box;
+  width: 50%;
+  background-color: lightcyan;
+  // min-width: max-content;
+  border-radius: 1rem;
+}
+
+#custom-cursor {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 2px;
+  height: 2px;
+
+  pointer-events: none;
+  background: #c62323;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+
+  // 투명도 값을 0으로 해서 호버가 됐을떄 나오게 함
+  opacity: 0;
+  transition: transform 0.5s;
+}
+
+#custom-cursor.zoom {
+  transform: scale(4);
+}
+
+body:hover #custom-cursor {
+  // 호버가 됐을 때 불투명하게 바뀜
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#custom-cursor:after {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 16px;
+  height: 16px;
+  content: '';
+  // 면 채움
+  background-color: #0033ab;
+  // border: 2px solid #c62323;
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+}
