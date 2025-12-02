@@ -52,7 +52,7 @@ main {
 }
 
 #custom-cursor.zoom {
-  transform: scale(1);
+  transform: scale(0.7);
 }
 
 body:hover #custom-cursor {
@@ -90,4 +90,6 @@ body:hover #custom-cursor {
     1em 4em 0 0 #00a2ff, 2em 4em 0 0 #00a2ff;
 
   transform: translate(-50%, -50%);
+
+  // 저거 모양 사이트 https://css-tricks.com/the-shapes-of-css/
 }
