@@ -1,0 +1,113 @@
+p {
+  display: flex;
+  padding: 3rem 0;
+  font-size: 2rem;
+}
+
+html,
+body {
+  width: 100%;
+  height: 3000px;
+  overflow-x: hidden;
+  background-color: #000;
+}
+
+.cover {
+  display: flex;
+  width: 100vh;
+  margin-bottom: 10rem;
+}
+
+.cover:nth-child(1) {
+  margin-top: 5vh;
+  background-color: lightseagreen;
+  transform: rotate(-2deg);
+}
+
+.cover:nth-child(2) {
+  justify-content: flex-end;
+  margin-top: 5vh;
+  background-color: rgb(3, 255, 242);
+  transform: rotate(2deg);
+}
+
+body {
+  margin: 0;
+  cursor: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.hover-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-color: lightcyan;
+  border-radius: 1rem;
+}
+
+#custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  pointer-events: none;
+  background: #00a2ff;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: transform 0.5s;
+}
+
+#custom-cursor.zoom {
+  transform: scale(0.7);
+}
+
+body:hover #custom-cursor {
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out 0.1s;
+}
+
+#custom-cursor:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  content: "";
+  background: #00a2ff;
+  box-shadow: 0 0 0 1em #00a2ff, 0 1em 0 1em #00a2ff, -2.5em 1.5em 0 0.5em #00a2ff, 2.5em 1.5em 0 0.5em #00a2ff, -3em -3em 0 0 #00a2ff, 3em -3em 0 0 #00a2ff, -2em -2em 0 0 #00a2ff, 2em -2em 0 0 #00a2ff, -3em -1em 0 0 #00a2ff, -2em -1em 0 0 #00a2ff, 2em -1em 0 0 #00a2ff, 3em -1em 0 0 #00a2ff, -4em 0 0 0 #00a2ff, -3em 0 0 0 #00a2ff, 3em 0 0 0 #00a2ff, 4em 0 0 0 #00a2ff, -5em 1em 0 0 #00a2ff, -4em 1em 0 0 #00a2ff, 4em 1em 0 0 #00a2ff, 5em 1em 0 0 #00a2ff, -5em 2em 0 0 #00a2ff, 5em 2em 0 0 #00a2ff, -5em 3em 0 0 #00a2ff, -3em 3em 0 0 #00a2ff, 3em 3em 0 0 #00a2ff, 5em 3em 0 0 #00a2ff, -2em 4em 0 0 #00a2ff, -1em 4em 0 0 #00a2ff, 1em 4em 0 0 #00a2ff, 2em 4em 0 0 #00a2ff;
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  width: min(100%, 75rem);
+  padding-inline: 2.5rem;
+  margin-inline: auto;
+  background-color: aqua;
+}
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1.5em);
+}
+
+.box-test {
+  --flow-space: 5.625rem;
+  width: clamp(40rem, 100%, 50rem);
+  padding: 1.25rem;
+  background-color: lightcoral;
+  border: 0.625rem #000 solid;
+}
+.box-test > * {
+  --flow-space: 1.5em;
+}
