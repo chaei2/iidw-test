@@ -6,8 +6,8 @@
 }
 p {
   display: flex;
-  padding: 15px 0;
-  font-size: 32px;
+  padding: 0.9375rem 0;
+  font-size: 2rem;
 }
 
 html,
