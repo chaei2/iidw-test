@@ -1,0 +1,57 @@
+//  > 바로 직계 자손
+// .flow > * + *{}
+// margin-block-start이랑 margin-top이랑 똑같음
+// 좌우는 인라인, 상하는 블록
+// 박스 모델이 있음
+// 콘텐츠, 패딩, 보더, 마진이 있음
+// 가장 바깥 경계는 부모님임 혹은 형제-> 이것이 마진의 경계
+// 패딩은 내 안의 자녀가 있을 것임 내 안의 자녀로부터 얼마만큼 떨굴것인가?임
+// 보더는 어떤 사이즈를
+
+// _는 안 적어도 됨
+@use './scoll';
+@use './cursor';
+
+// 플루이드 스케일- media 어쩌구?
+
+.center {
+  width: min(100%, 75rem);
+  // padding-inline: 2.5rem;
+  margin-inline: auto;
+  background-color: aqua;
+}
+
+// var는 변수임 무조건 css는 --로 시작함(안되면 이거로 해줘라는 기능이 있음)
+// 앞으로 디자인할 때 px를 쓰면 안 무조건 em, rem
+// 1rem= 16px임
+// em =  기본 글자 크기의 1~3배 등등 어떤 엘레먼트의 글자 사이즈를 얘기하고 싶 을때 em임 즉 상대적인 치수, 이 친구한테 설정되어있는 글자 크기
+
+// --flow-space라는 변수가 있는데
+// css는 선언 없이도 변수가 작동함
+.flow > * + * {
+  margin-block-start: var(--flow-space, 0.5em);
+}
+
+// option + z 누르면 값이 싹 바뀜
+// 글자에 비례해서 커져야하기 때문에 rem을 쓰는 것임
+
+// 근데 이렇게 기이하게 쓸 일은없음 아마도.
+.box-test {
+  --flow-space: 5.625rem;
+  // width: 18.75rem;
+
+  // max-width: 30rem;
+  width: clamp(40rem, 100%, 50rem);
+
+  // 명시적으로 사이즈를 넣어주는 방식
+  // 넣어준 값에서 작은 값을 넣겠다는 것임
+  // 즉 부모님의 100%를 가지지만 지금 100%가 480임
+  // width: min(100%, 30rem);
+  padding: 1.25rem;
+  background-color: lightcoral;
+  border: 0.625rem #000 solid;
+
+  > * {
+    --flow-space: 1.5em;
+  }
+}

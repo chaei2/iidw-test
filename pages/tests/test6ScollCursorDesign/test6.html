@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iidw test</title>
+    <link rel="stylesheet" href="./css/home.css" />
+    <!-- <link rel="stylesheet" href="../../../styles/home.css" /> -->
+    <!-- <link rel="stylesheet" href="./styles/test2.css" /> -->
+
+    <!-- 현재 커서 마우스 변환과, 스크롤이 될 때, 텍스트가 왼쪽에서 오른쪽으로 흘러가는 이벤트를 만들어둠 + font도 woff로 적용해서 별도 작동 필요없이 적용함 -->
+
+    <!-- 지금 해결해야하는건 scoll에 왜 마진이 있는지, rem, em 이 적용된게 아닌지 등 살펴봐야함 -->
+
+    <script src="./cursor.js" defer></script>
+    <script src="./scoll.js" defer></script>
+  </head>
+  <body>
+    <div class="cover center">
+      <p class="first-animation"></p>
+    </div>
+    <div class="cover center">
+      <p class="second-animation"></p>
+    </div>
+    <main>
+      <div class="hover-container">마우스 커서를 올려보세요.</div>
+    </main>
+    <div id="custom-cursor"></div>
+  </body>
+</html>
+
+<!-- 참고 링크 https://youtu.be/z9hN9PXhe-A?si=31xsQySKyVH9VV0m -->
