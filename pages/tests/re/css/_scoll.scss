@@ -26,22 +26,21 @@ body {
   width: 100%;
   // height: 93.75rem;
   overflow-x: hidden;
-  // font-size: 1.875rem;
-  // font-family: '', '';
+
   background-color: #000;
 }
 
 .cover {
   display: flex;
-  width: 100vh;
-  // margin-bottom: 10rem;
+  width: 100vw;
 }
 
 .cover:nth-child(1) {
-  // margin-top: 5vh;
-  // transform: rotate(-2deg);
+  padding-top: 3rem;
   font-family: Anurati;
   color: #214a73;
+  // margin-top: 5vh;
+  transform: rotate(-2deg);
   // background-color: lightseagreen;
 }
 

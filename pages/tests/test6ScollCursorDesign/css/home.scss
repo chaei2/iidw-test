@@ -11,6 +11,7 @@
 // _는 안 적어도 됨
 @use './scoll';
 @use './cursor';
+@use './reset';
 
 // 플루이드 스케일- media 어쩌구?
 
@@ -18,7 +19,7 @@
   width: min(100%, 75rem);
   // padding-inline: 2.5rem;
   margin-inline: auto;
-  background-color: aqua;
+  background-color: #01060f;
 }
 
 // var는 변수임 무조건 css는 --로 시작함(안되면 이거로 해줘라는 기능이 있음)
