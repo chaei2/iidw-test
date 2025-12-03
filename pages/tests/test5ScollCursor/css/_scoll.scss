@@ -1,22 +1,25 @@
-// @font-face {
-//   font-family: 'SsallakNun';
-//   font-weight: normal;
-//   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HailSnow.woff')
-//     format('woff');
-//   font-display: swap;
-// }
+@font-face {
+  font-family: 'SsallakNun';
+  font-weight: normal;
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HailSnow.woff')
+    format('woff');
+  font-display: swap;
+}
+
 p {
   display: flex;
-  padding: 3rem 0;
-  font-size: 2rem;
+  // 얘가 사이즈 줄이는거
+  padding: 15px 0;
+
+  font-size: 32px;
 }
 
 html,
 body {
   width: 100%;
-  height: 3000px;
+  height: 1500px;
   overflow-x: hidden;
-  // font-size: 30px;
+  // font-size: 1.875rem;
   // font-family: '', '';
   background-color: #000;
 }
@@ -24,13 +27,13 @@ body {
 .cover {
   display: flex;
   width: 100vh;
-  margin-bottom: 10rem;
+  margin-bottom: 160px;
 }
 
 .cover:nth-child(1) {
   margin-top: 5vh;
   background-color: lightseagreen;
-  transform: rotate(-2deg);
+  // transform: rotate(-2deg);
 }
 
 .cover:nth-child(2) {
@@ -38,4 +41,8 @@ body {
   margin-top: 5vh;
   background-color: rgb(3, 255, 242);
   transform: rotate(2deg);
+}
+
+.first-animation {
+  font-family: SsallakNun;
 }
