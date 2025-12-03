@@ -43,6 +43,7 @@ function animate() {
 
 animate();
 
+// 스크롤 무조건 되어야 작동함-> 즉 스크롤이 안되는 페이지면 작동하지 않음
 window.addEventListener('scroll', () => {
   count1 += 10;
   count2 += 10;

@@ -16,7 +16,7 @@
 
 .center {
   width: min(100%, 75rem);
-  padding-inline: 2.5rem;
+  // padding-inline: 2.5rem;
   margin-inline: auto;
   background-color: aqua;
 }
@@ -29,7 +29,7 @@
 // --flow-space라는 변수가 있는데
 // css는 선언 없이도 변수가 작동함
 .flow > * + * {
-  margin-block-start: var(--flow-space, 1.5em);
+  margin-block-start: var(--flow-space, 0.5em);
 }
 
 // option + z 누르면 값이 싹 바뀜
