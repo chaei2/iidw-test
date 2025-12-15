@@ -96,10 +96,15 @@ textarea:not([rows]) {
 .cover:nth-child(2) {
   justify-content: flex-end;
   font-family: SsallakNun;
-  font-size: 28px;
+  font-size: 1.75rem;
   color: #214a73;
 }
 
+@media screen and (max-width: 46.25rem) {
+  .cover:nth-child(2) {
+    font-size: 1.25rem;
+  }
+}
 body {
   padding-bottom: 4.375rem;
   background: #000103;
@@ -193,10 +198,10 @@ body {
     line-height: 20px;
   }
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 46.25rem) {
   .h1-text {
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 1.5625rem;
+    line-height: 1.5625rem;
   }
   .h3-text {
     font-size: 17px;

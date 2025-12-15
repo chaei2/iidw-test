@@ -15,8 +15,14 @@
   justify-content: flex-end;
   font-family: SsallakNun;
   // margin-top: 5vh;
-  font-size: 28px;
+  font-size: 1.75rem;
   color: #214a73;
   // background-color: rgb(3, 255, 242);
   // transform: rotate(2deg);
+}
+
+@media screen and (max-width: 46.25rem) {
+  .cover:nth-child(2) {
+    font-size: 1.25rem;
+  }
 }

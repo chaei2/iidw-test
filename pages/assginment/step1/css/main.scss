@@ -129,11 +129,11 @@ body {
   }
 }
 
-// 700px 일때
-@media screen and (max-width: 740px) {
+// 740px 일때
+@media screen and (max-width: 46.25rem) {
   .h1-text {
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 1.5625rem;
+    line-height: 1.5625rem;
   }
   .h3-text {
     font-size: 17px;
