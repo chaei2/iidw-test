@@ -85,6 +85,16 @@ body {
 .padding-2 {
   padding: 10rem 0rem 10rem 0rem;
 }
+.border-bottom {
+  border-bottom: solid 1px;
+  border-image: linear-gradient(
+    90deg,
+    rgba(0, 1, 3, 1) 0%,
+    rgba(188, 208, 231, 1) 50%,
+    rgba(0, 1, 3, 1) 100%
+  );
+  border-image-slice: 1;
+}
 
 // 순서 문제 에반데 ^^)... 바꾸고 항상 순서 생각하자..
 .h1-text {
