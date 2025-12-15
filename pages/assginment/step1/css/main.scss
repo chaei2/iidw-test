@@ -1,12 +1,16 @@
 @use './reset';
 
+// text
+// color 3 - BCD0E7
+
 // BG
 // color 17 - 000103
 // color 16 - 01060F
 // color 15 - 051525
 
 body {
-  padding: 0px 200px 70px 200px;
+  // min-width: 10em;
+  padding: 0rem 10em 4.375rem 10em;
   // 배경 그라데이션 색 좀 올림 5정도
   background: #000103;
   background: linear-gradient(
@@ -17,9 +21,17 @@ body {
   );
 }
 
-// 전역 class
+// -----전역 class-----
+.margin-in {
+  margin-inline: auto;
+}
+
+.fontF {
+  font-family: Aldrich;
+}
+
 .section {
-  gap: 2rem;
+  gap: 32px;
 }
 
 .flex {
@@ -27,38 +39,69 @@ body {
 }
 
 .gap {
-  column-gap: 15px;
+  column-gap: 0.9375rem;
 }
 
-// 지역 class
+// -----지역 class-----
 // section-1 nevigation
 .nevigation {
   // .p {
-  //   padding: 0px 10rem 0px 10rem;
+  //   padding: 0rem 160px 0rem 160px;
   // }
-  
+
   .C,
   .F {
     align-self: center;
-
-    font-family: Aldrich;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: #bcd0e760;
   }
 
   .logo {
     align-self: center;
-    min-width: 2.1875rem;
-    height: 1.7169rem;
+    min-width: 35px;
+    height: 27.4704px;
     margin-inline: auto;
   }
 }
 
 .padding-1 {
-  padding: 40px 0px 40px 0px;
+  padding: 2.5rem 0rem 2.5rem 0rem;
 }
 
 // section-2 COPPER VS FIBER
 .padding-2 {
-  padding: 160px 0px 160px 0px;
+  padding: 10rem 0rem 10rem 0rem;
+}
+
+// 순서 문제 에반데 ^^)... 바꾸고 항상 순서 생각하자..
+.h1-text {
+  // align-self: center;
+
+  font-size: 3.75rem;
+  line-height: 3.75rem;
+  color: #bcd0e7;
+  text-align: center;
+}
+
+// 화면 사이즈가 줄어들때 같이 줄어들었으면 하는 애들
+@media screen and (max-width: 62.5rem) {
+  .h1-text {
+    align-self: center;
+
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: #bcd0e7;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 43.75rem) {
+  .h1-text {
+    align-self: center;
+
+    font-size: 25px;
+    line-height: 25px;
+    color: #bcd0e7;
+    text-align: center;
+  }
 }
