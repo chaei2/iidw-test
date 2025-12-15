@@ -82,20 +82,22 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-html,
-body {
-  width: 100%;
-  overflow-x: hidden;
+@font-face {
+  font-family: "SsallakNun";
+  font-weight: normal;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HailSnow.woff") format("woff");
+  font-display: swap;
 }
-
 .cover {
   display: flex;
-  font-family: Anurati;
-  color: #214a73;
+  width: 100vw;
 }
 
-#scollText {
-  white-space: nowrap;
+.cover:nth-child(2) {
+  justify-content: flex-end;
+  font-family: SsallakNun;
+  font-size: 28px;
+  color: #214a73;
 }
 
 body {

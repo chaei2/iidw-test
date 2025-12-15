@@ -1,48 +1,41 @@
-const pTag = document.querySelector('#scollText');
+const pTag1 = document.querySelector('.first-animation');
 
-const TextArr =
-  'FIBER OPTIC CABLE COPPER CABLE FIBER OPTIC CABLE COPPER CABLE FIBER OPTIC CABLE COPPER CABLE';
+const textArr1 =
+  'FIBER OPTIC CABLE COPPER CABLE FIBER OPTIC CABLE COPPER CABLE FIBER OPTIC CABLE COPPER CABLE FIBER OPTIC CABLE COPPER FIBER OPTIC CABLE COPPER';
 
-function initText(element, textString) {
+function initTexts(element, textString) {
   const parts = textString.split(/\s+/);
   const duplicated = parts.concat(parts);
-  element.innerText = duplicated.join('\u00A0\u00A0\u00A0\u00A0\u00A0');
+  element.innerText = duplicated.join('\u00A0\u00A0\u00A0');
 }
 
-initText(pTag, TextArr);
+initTexts(pTag1, textArr1);
 
-let count = 0;
-let loop = 0;
-
-function measure() {
-  // 한 바퀴 길이
-  loop = pTag.scrollWidth / 2;
-
-  //  시작부터 왼쪽에서
-  pTag.style.transform = `translate3d(-${loop}px, 0, 0)`;
-}
+let count1 = 0;
 
 function marqueeText(count, element, direction) {
-  // loop만큼 가면 다시 0
-  if (count > loop) count = 0;
-  element.style.transform = `translate3d(${direction * count - loop}px, 0, 0)`;
+  if (count > element.scrollWidth / 2) {
+    element.style.transform = `translate3d(0, 0, 0)`;
+    count = 0;
+  }
+  element.style.transform = `translate3d(${direction * count}px, 0, 0)`;
+
   return count;
 }
 
 function animate() {
-  count++;
-  // 흐름
-  count = marqueeText(count, pTag, 0.5);
-  requestAnimationFrame(animate);
+  count1++;
+
+  count1 = marqueeText(count1, pTag1, 0.3);
+
+  window.requestAnimationFrame(animate);
 }
 
-window.addEventListener('scroll', () => {
-  count += 10;
-});
-window.addEventListener('resize', measure);
+animate();
 
-// 폭 계산 먼저, 그 다음 애니메이션 시작
-window.addEventListener('load', () => {
-  measure();
-  animate();
-});
+function scrollHandler() {
+  count1 += 15;
+}
+
+window.addEventListener('scroll', scrollHandler);
+animate();
