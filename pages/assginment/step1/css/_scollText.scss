@@ -1,0 +1,29 @@
+html,
+body {
+  width: 100%;
+  // height: 93.75rem;
+  overflow-x: hidden;
+
+  // background-color: #000;
+}
+
+.cover {
+  display: flex;
+  // width: 100vw;
+  // padding-top: 3rem;
+  font-family: Anurati;
+  color: #214a73;
+
+  // transform: rotate(-2deg);
+}
+
+#scollText {
+  white-space: nowrap;
+}
+// :nth-child(1)
+// #scollText {
+//   // display: block;
+//   // width: 100vw;
+
+//   // overflow: hidden;
+// }

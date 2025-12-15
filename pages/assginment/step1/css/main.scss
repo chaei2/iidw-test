@@ -1,4 +1,5 @@
 @use './reset';
+@use './scollText';
 
 // text
 // color 3 - BCD0E7
@@ -10,7 +11,7 @@
 
 body {
   // min-width: 10em;
-  padding: 0rem 10em 4.375rem 10em;
+  padding-bottom: 4.375rem;
   // 배경 그라데이션 색 좀 올림 5정도
   background: #000103;
   background: linear-gradient(
@@ -36,6 +37,7 @@ body {
 
 .section {
   gap: 32px;
+  padding: 0px 10em 0px 10em;
 }
 
 .flex {

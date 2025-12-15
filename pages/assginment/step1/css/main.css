@@ -82,8 +82,24 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+html,
 body {
-  padding: 0rem 10em 4.375rem 10em;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.cover {
+  display: flex;
+  font-family: Anurati;
+  color: #214a73;
+}
+
+#scollText {
+  white-space: nowrap;
+}
+
+body {
+  padding-bottom: 4.375rem;
   background: #000103;
   background: linear-gradient(90deg, rgb(0, 1, 3) 0%, rgb(1, 6, 20) 50%, rgb(0, 1, 3) 100%);
 }
@@ -102,6 +118,7 @@ body {
 
 .section {
   gap: 32px;
+  padding: 0px 10em 0px 10em;
 }
 
 .flex {
