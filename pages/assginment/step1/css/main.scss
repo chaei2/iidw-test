@@ -8,17 +8,26 @@
 // color 17 - 000103
 // color 16 - 01060F
 // color 15 - 051525
+// color: var(--primary);
 
-body {
-  padding-bottom: 4.375rem;
+// 선언하고 부르기
+:root {
+  --primary: #bcd0e7;
+  --primary80: #bcd0e780;
+  --cardBg: #9d9d9d30;
+  --Bg: #000103;
   // 배경 그라데이션 색 좀 올림 5정도
-  background: #000103;
-  background: linear-gradient(
+  --BgGradient: linear-gradient(
     90deg,
     rgba(0, 1, 3, 1) 0%,
     rgba(1, 6, 20, 1) 50%,
     rgba(0, 1, 3, 1) 100%
   );
+}
+
+body {
+  padding-bottom: 4.375rem;
+  background: var(--BgGradient);
 }
 
 // -----전역 class-----
@@ -80,7 +89,7 @@ body {
   .F {
     align-self: center;
     font-size: 18px;
-    color: #bcd0e760;
+    color: var(--primary80);
   }
 
   .logo {
@@ -104,7 +113,7 @@ body {
   border-image: linear-gradient(
     90deg,
     rgba(0, 1, 3, 1) 0%,
-    rgba(188, 208, 231, 1) 50%,
+    var(--primary80),
     rgba(0, 1, 3, 1) 100%
   );
   border-image-slice: 1;
@@ -117,14 +126,14 @@ body {
 
   font-size: 3.75rem;
   line-height: 3.75rem;
-  color: #bcd0e7;
+  color: var(--primary);
   text-align: center;
 }
 
 .h3-text {
   font-size: 28px;
   line-height: 28px;
-  color: #bcd0e780;
+  color: var(--primary80);
   text-align: center;
 }
 
@@ -147,14 +156,14 @@ body {
 .h4-text {
   font-size: 24px;
   font-weight: 400;
-  color: #bcd0e780;
+  color: var(--primary80);
   text-align: center;
 }
 
 .koH4-text {
   font-size: 20px;
   font-weight: 400;
-  color: #bcd0e780;
+  color: var(--primary80);
   text-align: center;
 }
 
@@ -173,14 +182,15 @@ body {
   width: 303px;
   height: 262px;
   margin-inline: auto;
-  background-color: #9d9d9d30;
+  background-color: var(--cardBg);
   border-radius: 5%;
   transform: scale(0.9);
   transition: transform 0.5s;
 }
 
 .card1:hover {
-  background-color: #bcd0e7;
+  // 이거 색상 좀 고려 해봐야할듯 일단 예시임 ㅇㅇ
+  background-color: var(--primary);
 
   transform: scale(1);
   transition: transform 0.5s;
