@@ -6,6 +6,10 @@
   font-display: swap;
 }
 
+:root {
+  --secondary: #214a73;
+}
+
 .cover {
   display: flex;
   width: 100vw;
@@ -16,7 +20,7 @@
   font-family: SsallakNun;
   // margin-top: 5vh;
   font-size: 1.75rem;
-  color: #214a73;
+  color: var(--secondary);
   // background-color: rgb(3, 255, 242);
   // transform: rotate(2deg);
 }
