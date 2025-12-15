@@ -217,6 +217,15 @@ body {
   height: 262px;
   margin-inline: auto;
   background-color: rgba(157, 157, 157, 0.1882352941);
+  border-radius: 5%;
+  transform: scale(0.9);
+  transition: transform 0.5s;
+}
+
+.card1:hover {
+  background-color: #bcd0e7;
+  transform: scale(1);
+  transition: transform 0.5s;
 }
 
 @media screen and (max-width: 62.5rem) {

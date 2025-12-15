@@ -152,7 +152,17 @@ body {
   height: 262px;
   margin-inline: auto;
   background-color: #9d9d9d30;
+  border-radius: 5%;
+  transform: scale(0.9);
+  transition: transform 0.5s;
 }
+
+.card1:hover {
+  background-color: #bcd0e7;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
 // 화면 사이즈가 줄어들때 같이 줄어들었으면 하는 애들
 // 1000px 일때
 @media screen and (max-width: 62.5rem) {
