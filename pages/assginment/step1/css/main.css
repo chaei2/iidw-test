@@ -312,6 +312,10 @@ body {
   transition: transform 0.5s;
 }
 
+a {
+  cursor: none;
+}
+
 .card1:hover {
   background-color: var(--primary);
   transform: scale(1);

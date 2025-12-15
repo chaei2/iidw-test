@@ -179,6 +179,7 @@ body {
   width: fit-content;
   // 내용만큼(= Hug)
   margin-inline: auto;
+
   // (안전장치)
   // padding: 0px 120px 0px 120px;
 }
@@ -194,6 +195,10 @@ body {
   border-radius: 5%;
   transform: scale(0.9);
   transition: transform 0.5s;
+}
+
+a {
+  cursor: none;
 }
 
 .card1:hover {
