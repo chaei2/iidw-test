@@ -10,7 +10,6 @@
 // color 15 - 051525
 
 body {
-  // min-width: 10em;
   padding-bottom: 4.375rem;
   // 배경 그라데이션 색 좀 올림 5정도
   background: #000103;
@@ -36,14 +35,14 @@ body {
 }
 
 .section {
-  gap: 32px;
+  gap: 1rem;
   padding: 0px 10em 0px 10em;
 }
 
 .flex {
   display: flex;
 }
-
+// flex랑 gird가 있어야 gap 먹힘
 .c-gap {
   column-gap: 0.9375rem;
 }
@@ -116,10 +115,34 @@ body {
   text-align: center;
 }
 
+.set3 {
+  display: flex;
+
+  // 기존에 가로인데, flex-direction하면 세로로 쌓음
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 50px 0px 50px 0px;
+}
+
+.h4-text {
+  font-size: 24px;
+  font-weight: 400;
+  color: #bcd0e780;
+  text-align: center;
+}
+
+.koH4-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: #bcd0e780;
+  text-align: center;
+}
+
 // 화면 사이즈가 줄어들때 같이 줄어들었으면 하는 애들
 // 1000px 일때
 @media screen and (max-width: 62.5rem) {
   .h1-text {
+    padding-bottom: 1.2rem;
     font-size: 45px;
     line-height: 45px;
   }
@@ -127,17 +150,33 @@ body {
     font-size: 20px;
     line-height: 20px;
   }
+
+  .h4-text {
+    font-size: 21px;
+  }
+
+  .koH4-text {
+    font-size: 17.5px;
+  }
 }
 
 // 740px 일때
 @media screen and (max-width: 46.25rem) {
   .h1-text {
+    padding-bottom: 0.8rem;
     font-size: 1.5625rem;
     line-height: 1.5625rem;
   }
   .h3-text {
     font-size: 17px;
     line-height: 1.5em;
+  }
+  .h4-text {
+    font-size: 17px;
+  }
+
+  .koH4-text {
+    font-size: 15px;
   }
 }
 

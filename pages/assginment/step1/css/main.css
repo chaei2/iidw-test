@@ -124,7 +124,7 @@ body {
 }
 
 .section {
-  gap: 32px;
+  gap: 1rem;
   padding: 0px 10em 0px 10em;
 }
 
@@ -188,8 +188,30 @@ body {
   text-align: center;
 }
 
+.set3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 50px 0px 50px 0px;
+}
+
+.h4-text {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(188, 208, 231, 0.5019607843);
+  text-align: center;
+}
+
+.koH4-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(188, 208, 231, 0.5019607843);
+  text-align: center;
+}
+
 @media screen and (max-width: 62.5rem) {
   .h1-text {
+    padding-bottom: 1.2rem;
     font-size: 45px;
     line-height: 45px;
   }
@@ -197,14 +219,27 @@ body {
     font-size: 20px;
     line-height: 20px;
   }
+  .h4-text {
+    font-size: 21px;
+  }
+  .koH4-text {
+    font-size: 17.5px;
+  }
 }
 @media screen and (max-width: 46.25rem) {
   .h1-text {
+    padding-bottom: 0.8rem;
     font-size: 1.5625rem;
     line-height: 1.5625rem;
   }
   .h3-text {
     font-size: 17px;
     line-height: 1.5em;
+  }
+  .h4-text {
+    font-size: 17px;
+  }
+  .koH4-text {
+    font-size: 15px;
   }
 }
