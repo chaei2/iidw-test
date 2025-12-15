@@ -50,8 +50,8 @@ body {
 .r-gap {
   row-gap: 1rem;
 }
-.gap {
-  gap: 2rem;
+.gap0_5 {
+  gap: 0.5rem;
 }
 
 // -----지역 class-----
@@ -115,13 +115,19 @@ body {
   text-align: center;
 }
 
+//section-3
+
 .set3 {
   display: flex;
 
   // 기존에 가로인데, flex-direction하면 세로로 쌓음
   flex-direction: column;
-  gap: 0.5em;
+  // gap: 0.5em;
   padding: 50px 0px 50px 0px;
+}
+
+.flex-d {
+  flex-direction: column;
 }
 
 .h4-text {
@@ -138,6 +144,15 @@ body {
   text-align: center;
 }
 
+.cards {
+}
+
+.card1 {
+  width: 303px;
+  height: 262px;
+  margin-inline: auto;
+  background-color: #9d9d9d30;
+}
 // 화면 사이즈가 줄어들때 같이 줄어들었으면 하는 애들
 // 1000px 일때
 @media screen and (max-width: 62.5rem) {
