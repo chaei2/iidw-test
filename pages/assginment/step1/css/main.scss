@@ -38,9 +38,21 @@ body {
   gap: 1rem;
   padding: 0px 10em 0px 10em;
 }
-
 .flex {
   display: flex;
+}
+
+.flex-1 {
+  display: flex;
+  > * {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-inline-size: 100%;
+  }
+}
+
+.flex-w {
+  flex-wrap: wrap;
 }
 // flex랑 gird가 있어야 gap 먹힘
 .c-gap {
@@ -58,6 +70,7 @@ body {
 // section-1 nevigation
 
 // nevigation문제는 일단 나중에 해결해...
+
 .nevigation {
   // .p {
   //   padding: 0rem 160px 0rem 160px;
@@ -122,6 +135,7 @@ body {
 
   // 기존에 가로인데, flex-direction하면 세로로 쌓음
   flex-direction: column;
+  align-items: center;
   // gap: 0.5em;
   padding: 50px 0px 50px 0px;
 }
@@ -145,9 +159,17 @@ body {
 }
 
 .cards {
+  width: fit-content;
+  // 내용만큼(= Hug)
+  margin-inline: auto;
+  // (안전장치)
+  // padding: 0px 120px 0px 120px;
 }
 
 .card1 {
+  align-items: center;
+  /* display: flex; */
+  justify-content: center;
   width: 303px;
   height: 262px;
   margin-inline: auto;
@@ -159,8 +181,20 @@ body {
 
 .card1:hover {
   background-color: #bcd0e7;
+
   transform: scale(1);
   transition: transform 0.5s;
+}
+
+.copperImage {
+  // align-items: center;
+  // justify-content: center;
+  opacity: 0.5;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 // 화면 사이즈가 줄어들때 같이 줄어들었으면 하는 애들
@@ -183,6 +217,9 @@ body {
   .koH4-text {
     font-size: 17.5px;
   }
+  .cards {
+    transform: scale(0.7);
+  }
 }
 
 // 740px 일때
@@ -202,6 +239,9 @@ body {
 
   .koH4-text {
     font-size: 15px;
+  }
+  .cards {
+    transform: scale(0.6);
   }
 }
 
