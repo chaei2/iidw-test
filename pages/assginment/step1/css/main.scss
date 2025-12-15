@@ -26,6 +26,10 @@ body {
   margin-inline: auto;
 }
 
+.regular {
+  font-weight: 400;
+}
+
 .fontF {
   font-family: Aldrich;
 }
@@ -38,12 +42,21 @@ body {
   display: flex;
 }
 
-.gap {
+.c-gap {
   column-gap: 0.9375rem;
+}
+
+.r-gap {
+  row-gap: 1rem;
+}
+.gap {
+  gap: 2rem;
 }
 
 // -----지역 class-----
 // section-1 nevigation
+
+// nevigation문제는 일단 나중에 해결해...
 .nevigation {
   // .p {
   //   padding: 0rem 160px 0rem 160px;
@@ -75,6 +88,7 @@ body {
 
 // 순서 문제 에반데 ^^)... 바꾸고 항상 순서 생각하자..
 .h1-text {
+  padding-bottom: 1.5rem;
   // align-self: center;
 
   font-size: 3.75rem;
@@ -83,25 +97,34 @@ body {
   text-align: center;
 }
 
+.h3-text {
+  font-size: 28px;
+  line-height: 28px;
+  color: #bcd0e780;
+  text-align: center;
+}
+
 // 화면 사이즈가 줄어들때 같이 줄어들었으면 하는 애들
+// 1000px 일때
 @media screen and (max-width: 62.5rem) {
   .h1-text {
-    align-self: center;
-
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    color: #bcd0e7;
-    text-align: center;
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .h3-text {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
-@media screen and (max-width: 43.75rem) {
+// 700px 일때
+@media screen and (max-width: 740px) {
   .h1-text {
-    align-self: center;
-
     font-size: 25px;
     line-height: 25px;
-    color: #bcd0e7;
-    text-align: center;
+  }
+  .h3-text {
+    font-size: 17px;
+    line-height: 1.5em;
   }
 }

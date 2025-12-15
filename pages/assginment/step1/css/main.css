@@ -92,6 +92,10 @@ body {
   margin-inline: auto;
 }
 
+.regular {
+  font-weight: 400;
+}
+
 .fontF {
   font-family: Aldrich;
 }
@@ -104,9 +108,17 @@ body {
   display: flex;
 }
 
-.gap {
+.c-gap {
   -moz-column-gap: 0.9375rem;
        column-gap: 0.9375rem;
+}
+
+.r-gap {
+  row-gap: 1rem;
+}
+
+.gap {
+  gap: 2rem;
 }
 
 .nevigation .C,
@@ -131,27 +143,37 @@ body {
 }
 
 .h1-text {
+  padding-bottom: 1.5rem;
   font-size: 3.75rem;
   line-height: 3.75rem;
   color: #bcd0e7;
   text-align: center;
 }
 
+.h3-text {
+  font-size: 28px;
+  line-height: 28px;
+  color: rgba(188, 208, 231, 0.5019607843);
+  text-align: center;
+}
+
 @media screen and (max-width: 62.5rem) {
   .h1-text {
-    align-self: center;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    color: #bcd0e7;
-    text-align: center;
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .h3-text {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
-@media screen and (max-width: 43.75rem) {
+@media screen and (max-width: 740px) {
   .h1-text {
-    align-self: center;
     font-size: 25px;
     line-height: 25px;
-    color: #bcd0e7;
-    text-align: center;
+  }
+  .h3-text {
+    font-size: 17px;
+    line-height: 1.5em;
   }
 }
