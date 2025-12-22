@@ -496,6 +496,6 @@ a {
 
 .switcher > * {
   flex-grow: 1;
-  flex-basis: calc((var(--switcher-container-min-width, 40rem) - 50.7%) * 999999);
+  flex-basis: calc((var(--switcher-container-min-width, 40rem) - 50.7%) * 200);
   max-inline-size: 100%;
 }
