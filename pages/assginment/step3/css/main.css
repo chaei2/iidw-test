@@ -331,6 +331,10 @@ body {
   height: 27.4704px;
 }
 
+.logo2 {
+  width: 2rem;
+}
+
 .padding-1 {
   padding: 2.5rem 0rem 2.5rem 0rem;
 }
@@ -398,6 +402,10 @@ body {
   font-size: 18px;
 }
 
+.c {
+  text-align: center;
+}
+
 .cards {
   max-width: 1000px;
   margin-inline: auto;
@@ -437,6 +445,15 @@ a {
 .grid-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.max {
+  max-width: 1000px;
 }
 
 @media screen and (max-width: 62.5rem) {

@@ -105,6 +105,10 @@ body {
   }
 }
 
+.logo2 {
+  width: 2rem;
+}
+
 .padding-1 {
   padding: 2.5rem 0rem 2.5rem 0rem;
 }
@@ -186,6 +190,10 @@ body {
   font-size: 18px;
 }
 
+.c {
+  text-align: center;
+}
+
 .cards {
   // width: fit-content;
   max-width: 1000px;
@@ -243,6 +251,17 @@ a {
 .grid-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  // min-width: 500px;
+  // padding: 0rem 10rem 0rem 10rem;
+}
+
+.max {
+  max-width: 1000px;
 }
 
 // 화면 사이즈가 줄어들때 같이 줄어들었으면 하는 애들
