@@ -305,12 +305,19 @@ a {
   padding: 2rem;
 }
 
+.stroke {
+  border: solid 0.5px #bcd0e790;
+}
+
 .textBox {
-  display: flex;
   gap: 0.5rem;
   max-width: 53.125rem;
   padding-bottom: 1rem;
   // margin: 1rem;
+}
+
+.center {
+  align-content: center;
 }
 
 .card3 {
