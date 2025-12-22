@@ -7,7 +7,7 @@
     <script src="../js/cursor.js" defer></script>
     <script src="../js/scoll.js" defer></script>
     <link rel="stylesheet" href="../css/main.css" />
-    <title>fiber_원리 및 구조</title>
+    <title>fiber_성능</title>
   </head>
   <body>
     <!-- ㅇㄴ 왜 안되는건데 왜왜오애ㅐㄱ오애애액 -->
@@ -30,7 +30,7 @@
         <div class="margin-in gap">
           <h2 class="h1-text fontF blur">FIBER</h2>
 
-          <h3 class="h3-text fontF regular">원리 및 구조</h3>
+          <h3 class="h3-text fontF regular">성능</h3>
         </div>
       </div>
     </div>
@@ -40,68 +40,73 @@
       <!-- 이미지 클릭 시, 페이지 넘키는 방법: a태그로 img 감싸면 됨 -->
 
       <div class="card3 padding-4 border-bottom">
-        <h4 class="h4-text bold">내부전반사란 무엇인가?</h4>
+        <h4 class="h4-text bold">
+          전송 속도 (Transmission Speed): "한계가 없는 속도"
+        </h4>
         <img class="img-copper" src="../source/6.svg" alt="구리단선" />
 
         <div class="textBox paddingB">
           <!-- 싱글모드 -->
-          <p class="p-text18 bold primary90">전반사</p>
+          <p class="p-text18 bold primary90">성능 수준</p>
           <ul>
             <li class="p-text18 primary90">
-              빛이 굴절률이 큰 매질(코어)에서 굴절률이 작은 매질(클래딩)로
-              진행할 때, 빛이 경계면을 뚫고 나가지 못하고 내부로 100% 되돌아오는
-              현상을 말합니다.
-            </li>
-            <li class="p-text18 primary90">
-              굴절률 차이: 빛은 반드시 굴절률이 높은 곳에서 낮은 곳으로 가려고
-              해야 합니다. 그래서 광 케이블은 안쪽 코어(Core)의 굴절률을 높게,
-              바깥쪽 클래딩(Cladding)의 굴절률을 낮게 만듭니다.
-            </li>
-            <li class="p-text18 primary90">
-              임계각(Critical Angle)보다 큰 입사각: 빛이 경계면에 부딪히는
-              각도가 특정 각도(임계각)보다 더 완만하게 들어와야 합니다.
+              기본 10Gbps, 100Gbps를 넘어 상용화된 장비에서 400Gbps까지
+              구현되며, 광케이블은 전자가 아닌 광자(빛)를 이용하기 때문에 데이터
+              전송 속도가 비약적으로 빠릅니다.
             </li>
           </ul>
         </div>
 
-        <div class="textBox paddingB">
+        <div class="textBox paddingB border-bottom">
           <!-- 싱글모드 -->
-          <p class="p-text18 bold primary90">내부전반사</p>
+          <p class="p-text18 bold primary90">확장성: WDM(파장 분할 다중화)</p>
           <ul>
             <li class="p-text18 primary90">
-              빛이 밀도가 높은 매질(코어)에서 밀도가 낮은 매질(클래딩)로 진행할
-              때, 특정 각도 이상으로 부딪히면 빛이 밖으로 굴절되지 않고 내부로
-              100% 반사되는 현상입니다.
+              빛의 색깔(파장)을 수백 개로 쪼개어 한 가닥의 선으로 수
+              Tbps(테라비트)의 데이터를 보낼 수 있습니다. 이는 구리 케이블 수만
+              가닥을 합친 것보다 큰 용량입니다.
             </li>
           </ul>
         </div>
 
-        <h4 class="h4-text bold">
-          싱글모드(Single Mode) vs 멀티모드(Multi Mode)
+        <h4 class="h4-text bold paddingU">
+          전송 거리 (Transmission Distance): "지구 반대편까지"
         </h4>
         <img class="img-copper" src="../source/4.svg" alt="구리단선" />
 
-        <div class="textBox flex paddingB">
+        <div class="textBox flex">
           <!-- 싱글모드 -->
-          <p class="p-text18 bold primary90">싱글모드 (Single Mode)</p>
+          <p class="p-text18 bold primary90">멀티모드</p>
           <ul>
             <li class="p-text18 primary90">
-              코어 직경이 매우 좁아 빛이 한 길로만 갑니다.
+              빌딩이나 데이터센터 내에서 300m ~ 550m를 손실 없이 전송합니다.
+            </li>
+          </ul>
+        </div>
+
+        <div class="textBox flex">
+          <!-- 싱글모드 -->
+          <p class="p-text18 bold primary90">싱글모드</p>
+          <ul>
+            <li class="p-text18 primary90">
+              신호 증폭기 없이 수십 km에서 최대 100km까지 신호를 보냅니다. (구리
+              케이블의 1,000배 거리)
+            </li>
+          </ul>
+        </div>
+
+        <div class="textBox paddingB flex">
+          <!-- 싱글모드 -->
+          <p class="p-text18 bold primary90">해저 광케이블</p>
+          <ul>
+            <li class="p-text18 primary90">
+              전 세계 대륙을 잇는 수만 km의 해저 통신망도 이 성능 덕분에
+              가능합니다.
             </li>
           </ul>
         </div>
 
         <img class="img-copper" src="../source/5.svg" alt="구리단선" />
-
-        <div class="textBox flex paddingB">
-          <!-- 멀티모드 -->
-          <p class="p-text18 bold primary90">멀티모드 (Multi Mode)</p>
-          <ul>
-            <li class="p-text18 primary90">
-              코어 직경이 넓어 빛이 여러 경로로 반사되며 갑니다.
-            </li>
-          </ul>
-        </div>
       </div>
 
       <div class="card3 padding-4">
