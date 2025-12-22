@@ -171,7 +171,7 @@ body {
   font-size: 24px;
   font-weight: var(--regular);
   color: var(--primary80);
-  text-align: center;
+  // text-align: center;
 }
 
 .koH4-text {
@@ -306,7 +306,11 @@ a {
 }
 
 .textBox {
+  display: flex;
+  gap: 0.5rem;
   max-width: 53.125rem;
+  padding-bottom: 1rem;
+  // margin: 1rem;
 }
 
 .card3 {
@@ -332,6 +336,7 @@ a {
   }
   .h4-text {
     font-size: 17px;
+    line-height: 1.5em;
   }
 
   .koH4-text {
