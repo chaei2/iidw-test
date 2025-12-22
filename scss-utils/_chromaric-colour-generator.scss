@@ -1,0 +1,63 @@
+@use 'sass:map';
+
+@mixin chromaric-colour-generator(
+  $hue-infix-map,
+  $prefix-postfix-level-map-list,
+  $on-light-bg,
+  $on-dark-bg
+) {
+  @each $hue, $infix in $hue-infix-map {
+    @each $map in $prefix-postfix-level-map-list {
+      $prefix: map.get($map, 'prefix');
+      $postfix: map.get($map, 'postfix');
+      $level: map.get($map, 'level');
+      $light-colour: null;
+      $dark-colour: null;
+
+      @each $primitive in $on-light-bg {
+        $level-of-primitive: map.get($primitive, 'level');
+        $hue-of-primitive: map.get($primitive, 'hue');
+        $oklch: map.get($primitive, 'oklch');
+        $a: #{$hue-of-primitive};
+        $b: #{$hue};
+        $c: #{$level-of-primitive};
+        $d: #{$level};
+
+        @if $a == $b and $c == $d {
+          $light-colour: $oklch;
+        }
+      }
+
+      @each $primitive in $on-dark-bg {
+        $level-of-primitive: map.get($primitive, 'level');
+        $hue-of-primitive: map.get($primitive, 'hue');
+        $oklch: map.get($primitive, 'oklch');
+        $a: #{$hue-of-primitive};
+        $b: #{$hue};
+        $c: #{$level-of-primitive};
+        $d: #{$level};
+
+        @if $a == $b and $c == $d {
+          $dark-colour: $oklch;
+        }
+      }
+
+      @if $light-colour and $dark-colour {
+        $variable-name: #{$infix};
+
+        @if $prefix != '' {
+          $variable-name: #{$prefix}-#{$variable-name};
+        }
+
+        @if $postfix != '' {
+          $variable-name: #{$variable-name}-#{$postfix};
+        }
+
+        --colour-#{$variable-name}: light-dark(
+          #{$light-colour},
+          #{$dark-colour}
+        );
+      }
+    }
+  }
+}

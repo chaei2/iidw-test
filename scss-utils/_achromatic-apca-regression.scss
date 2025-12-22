@@ -1,0 +1,7 @@
+@use 'sass:math';
+
+@function achromatic-apca-regression($step, $power: 0.45597351485327778649) {
+  $normalized-step: math.div($step, 100);
+
+  @return math.pow($normalized-step, $power);
+}

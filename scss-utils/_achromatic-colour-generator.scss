@@ -1,0 +1,41 @@
+@use './achromatic-apca-regression' as *;
+@use './round-to-precision' as *;
+@use 'sass:list';
+@use 'sass:map';
+
+@mixin achromatic-colour-generator($variable-name-value-map) {
+  @each $variable-name, $value in $variable-name-value-map {
+    $light-level: map.get($value, 'light-level');
+    $dark-level: map.get($value, 'dark-level');
+    $light-value: map.get($value, 'light-value');
+    $dark-value: map.get($value, 'dark-value');
+    $light-colour: null;
+    $dark-colour: null;
+
+    @if $light-level {
+      $l: achromatic-apca-regression($light-level);
+      $l: round-to-precision($l);
+      $light-colour: 'oklch(#{$l} 0 0)';
+    } @else if $light-value {
+      $l: list.nth($light-value, 1);
+      $c: list.nth($light-value, 2);
+      $h: list.nth($light-value, 3);
+      $light-colour: 'oklch(#{$l} #{$c} #{$h})';
+    }
+
+    @if $dark-level {
+      $l: achromatic-apca-regression($dark-level);
+      $l: round-to-precision($l);
+      $dark-colour: 'oklch(#{$l} 0 0)';
+    } @else if $dark-value {
+      $l: list.nth($dark-value, 1);
+      $c: list.nth($dark-value, 2);
+      $h: list.nth($dark-value, 3);
+      $dark-colour: 'oklch(#{$l} #{$c} #{$h})';
+    }
+
+    @if $light-colour and $dark-colour {
+      --colour-#{$variable-name}: light-dark(#{$light-colour}, #{$dark-colour});
+    }
+  }
+}

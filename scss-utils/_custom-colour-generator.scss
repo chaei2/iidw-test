@@ -1,0 +1,26 @@
+@use 'sass:list';
+@use 'sass:map';
+
+@mixin custom-colour-generator($on-light-bg, $on-dark-bg) {
+  $finished-list: ();
+
+  @each $variable-name, $light-value in $on-light-bg {
+    $dark-value: map.get($on-dark-bg, $variable-name);
+
+    @if $dark-value {
+      --#{$variable-name}: light-dark(#{$light-value}, #{$dark-value});
+
+      $finished-list: map.set($finished-list, $variable-name, '');
+    } @else {
+      --#{$variable-name}: #{$light-value};
+    }
+  }
+
+  @each $variable-name, $dark-value in $on-dark-bg {
+    $finished: map.has-key($finished-list, $variable-name);
+
+    @if not $finished {
+      --#{$variable-name}: #{$dark-value};
+    }
+  }
+}

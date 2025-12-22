@@ -1,0 +1,7 @@
+@use 'sass:math';
+
+@function round-to-precision($number, $digits: 4) {
+  $power: math.pow(10, $digits);
+
+  @return math.div(math.round($number * $power), $power);
+}
