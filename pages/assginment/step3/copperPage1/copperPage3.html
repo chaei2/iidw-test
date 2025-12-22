@@ -30,7 +30,7 @@
         <div class="margin-in gap">
           <h2 class="h1-text fontF blur">COPPER</h2>
 
-          <h3 class="h3-text fontF regular">원리 및 구조</h3>
+          <h3 class="h3-text fontF regular">성능</h3>
         </div>
       </div>
     </div>
@@ -40,32 +40,54 @@
       <!-- 이미지 클릭 시, 페이지 넘키는 방법: a태그로 img 감싸면 됨 -->
 
       <div class="card3 padding-4">
-        <h4 class="h4-text bold">구조와 물리적 특성</h4>
+        <h4 class="h4-text bold">전송 속도(Data Rate)</h4>
+        <p class="p-text18 primary90">
+          구리 케이블은 전기를 흔들어 신호를 만드는데, 1초에 얼마나 많이
+          흔드느냐(주파수)가 속도를 결정합니다.
+        </p>
         <img class="img-copper" src="../source/copper_one.svg" alt="구리단선" />
 
-        <div class="textBox flex paddingB">
-          <p class="p-text18 bold primary90">단선</p>
+        <div class="textBox paddingB">
+          <p class="p-text18 bold primary90">현재 수준</p>
           <ul>
             <li class="p-text18 primary90">
-              한 가닥의 굵은 구리선으로 이루어진 케이블입니다.
+              일반적인 환경(Cat.5e~Cat.6)에서는 1Gbps가 표준이며, 서버실이나
+              고성능 장비(Cat.6A~Cat.7)에서는 10Gbps까지 성능을 냅니다.
+            </li>
+            <li class="p-text18 primary90">
+              Cat.5e: 100MHz 주파수를 사용하여 1Gbps 속도를 냅니다. (현재 가장
+              일반적인 성능)
+            </li>
+            <li class="p-text18 primary90">
+              Cat.6: 250MHz 주파수를 사용하여 1Gbps를 안정적으로 보내며, 짧은
+              거리(37~55m)에서는 10Gbps까지 성능이 나옵니다.
+            </li>
+            <li class="p-text18 primary90">
+              Cat.6A: 500MHz 주파수를 사용하여 100m 전체 구간에서 10Gbps 속도를
+              유지합니다.
+            </li>
+            <li class="p-text18 primary90">
+              Cat.8: 무려 2000MHz(2GHz)로 신호를 흔듭니다. 덕분에 40Gbps라는
+              압도적인 속도를 내지만, 너무 빨리 흔들다 보니 에너지가 빨리
+              소진되어 30m만 지나도 신호가 죽어버립니다.
             </li>
           </ul>
         </div>
 
-        <div class="textBox flex">
-          <p class="p-text18 bold primary90">특징</p>
+        <div class="textBox paddingB border-bottom">
+          <p class="p-text18 bold primary90">물리적 한계</p>
           <ul>
             <li class="p-text18 primary90">
-              금속의 전체 단면적이 꽉 차 있어 열이 고르게 분산됩니다.
-            </li>
-
-            <li class="p-text18 primary90">
-              더 많은 전류를 견딜 수 있어, 전력 소모가 큰 옥외 조명, 모터, 건물
-              전력 분배에 필수적입니다.
+              최신 규격인 Cat.8은 40Gbps까지 도달했지만, 주파수를 높일수록
+              노이즈(간섭)가 폭발적으로 늘어나기 때문에 이 이상의 속도를 내는
+              것은 매우 어렵습니다.
             </li>
           </ul>
         </div>
-        <h4 class="h4-text"></h4>
+
+        <h4 class="h4-text bold paddingU">
+          전송 거리와 신호 감쇠 (Distance & Attenuation)
+        </h4>
         <img class="img-copper" src="../source/copper_two.svg" alt="구리단선" />
 
         <div class="textBox flex paddingB">
