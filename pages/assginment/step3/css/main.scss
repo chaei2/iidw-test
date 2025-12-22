@@ -9,6 +9,10 @@ body {
 }
 
 // -----전역 class-----
+.primary80 {
+  color: var(--primary80);
+}
+
 .margin-in {
   margin-inline: auto;
 }
@@ -161,6 +165,10 @@ body {
   font-weight: var(--regular);
   color: var(--primary80);
   text-align: center;
+}
+
+.p-text {
+  font-size: 18px;
 }
 
 .cards {
