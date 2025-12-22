@@ -334,7 +334,8 @@ body {
   height: 262px;
   margin-inline: auto;
   background-color: var(--cardBg);
-  border-radius: 5%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
   transform: scale(0.9);
   transition: transform 0.5s;
 }
