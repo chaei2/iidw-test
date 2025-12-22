@@ -58,6 +58,14 @@
             </li>
             <li class="p-text18 primary90">
               <!--  -->
+              직경은 왼쪽부터 62.5 μm, 50 μm, 50 μm, 50 μm, 50 μm입니다.
+            </li>
+            <li class="p-text18 primary90">
+              <!--  -->
+              과거 OM1이 표준이였지만, 현재는 거의 사용하지 않습니다. OM2는 초기
+              기가비트 표준이였고, OM3는 10G 시대의 표준입니다. OM4 OM3의 강화
+              버전, 더 먼 거리 전송 가능하며, OM5는 SWDM(단파장 분할 다중화)
+              지원으로 최신 데이터 센터용으로 주로 사용합니다.
             </li>
           </ul>
         </div>
@@ -69,77 +77,23 @@
           <p class="p-text18 bold primary90"></p>
           <ul>
             <li class="p-text18 primary90">
-              왼쪽부터 순서대로 OM1, OM2, OM3, OM4, OM5까지 있으며 색상으로 구분
-              지을 수 있으며, OM시리즈는 멀티모드로 되어있습니다.
+              광 섬유의 싱글모드 또한 노란색으로 구분 지을 수 있습니다.
             </li>
             <li class="p-text18 primary90">
-              OM1, OM2는 주황 / OM3, OM4는 민트 / OM5는 청록색
+              싱글모드의 핵심은 9μm로 아주 좁은 통로입니다. 이는 0.009mm를
+              의미하며, 머리카락 굵기의 약 10분의 1 정도크기입니다.
             </li>
             <li class="p-text18 primary90">
-              <!--  -->
+              말 그대로 단일 경로로 이루어져 있으며, 장거리에 적합합니다.
+              장거리인만큼 장비의 가격대도 비싼 것이 특징입니다.
             </li>
           </ul>
-        </div>
-
-        <div class="textBox flex paddingB">
-          <!-- 싱글모드 -->
-          <p class="p-text18 bold primary90">싱글모드 (Single Mode)</p>
-          <ul>
-            <li class="p-text18 primary90">
-              코어 직경이 매우 좁아 빛이 한 길로만 갑니다.
-            </li>
-          </ul>
-        </div>
-
-        <img class="img-copper" src="../source/5.svg" alt="구리단선" />
-
-        <div class="textBox flex paddingB">
-          <!-- 멀티모드 -->
-          <p class="p-text18 bold primary90">멀티모드 (Multi Mode)</p>
-          <ul>
-            <li class="p-text18 primary90">
-              코어 직경이 넓어 빛이 여러 경로로 반사되며 갑니다.
-            </li>
-          </ul>
+          <!-- <th class="p-text18 primary90 stroke">규격</th>
+          <th class="p-text18 primary90 stroke">규격</th>
+          <th class="p-text18 primary90 stroke">규격</th> -->
         </div>
       </div>
 
-      <div class="card3 padding-4">
-        <h4 class="h4-text bold paddingB">
-          심선 수에 따른 구분 (Simplex / Duplex / Multi-Core)
-        </h4>
-        <!-- <video class="paddingB movie" src="../source/k.mp4" autoplay controls>
-          와전류
-        </video> -->
-        <!-- 1block -->
-        <div class="textBox flex">
-          <!-- 멀티모드 -->
-          <p class="p-text18 bold primary90">심플렉스(Simplex)</p>
-          <ul>
-            <li class="p-text18 primary90">광섬유가 딱 1가닥 들어있는 것.</li>
-          </ul>
-        </div>
-
-        <div class="textBox flex">
-          <!-- 멀티모드 -->
-          <p class="p-text18 bold primary90">듀플렉스(Duplex)</p>
-          <ul>
-            <li class="p-text18 primary90">
-              2가닥이 붙어 있는 것. (한쪽은 송신, 한쪽은 수신용)
-            </li>
-          </ul>
-        </div>
-
-        <div class="textBox flex">
-          <!-- 멀티모드 -->
-          <p class="p-text18 bold primary90">멀티코어/리본 케이블</p>
-          <ul>
-            <li class="p-text18 primary90">
-              수십~수천 가닥의 광섬유를 하나의 굵은 케이블 안에 뭉쳐 놓은 것.
-            </li>
-          </ul>
-        </div>
-      </div>
       <div class="section set3">
         <!-- <div class="flex flex-d gap0_5">
           <h4 class="h4-text fontF">Copper Cable</h4>
@@ -149,52 +103,6 @@
         <!-- 이미지 클릭 시, 페이지 넘키는 방법: a태그로 img 감싸면 됨 -->
 
         <!-- switcher써야함 -->
-        <div class="cards switcher">
-          <!-- <div class="flex-w"> -->
-          <div class="card">
-            <div class="card1">
-              <!-- <a href="./copperPage1/copperPage1.html">
-              </a> -->
-              <img class="copperImage" src="../source/1.svg" alt="구리단선" />
-            </div>
-            <div class="padding-3">
-              <p class="p-text18 bold primary90">심플렉스(Simplex)</p>
-              <!-- <ul>
-              <li class="p-text18 primary90">단선과 연선 차이</li>
-              <li class="p-text18 primary90">표피효과</li>
-            </ul> -->
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card1">
-              <!-- <a href="./copperPage1/copperPage2.html">
-              </a> -->
-              <img class="copperImage" src="../source/2.svg" alt="구리단선" />
-            </div>
-
-            <div class="padding-3">
-              <p class="p-text21 bold primary90 padding">듀플렉스(Duplex)</p>
-              <!-- <ul>
-              <li class="p-text18 primary90">단선과 연선 차이</li>
-              <li class="p-text18 primary90">표피효과</li>
-            </ul> -->
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card1">
-              <img class="copperImage" src="../source/3.svg" alt="듀플릭스" />
-              <!-- <a href="./copperPage1/copper.html"> </a> -->
-            </div>
-
-            <div class="padding-3">
-              <p class="p-text21 bold primary90">멀티코어/리본 케이블</p>
-              <!-- <p class="p-text18 primary90">광자의 아름다움</p> -->
-            </div>
-          </div>
-          <!-- </div> -->
-        </div>
       </div>
     </div>
 
