@@ -1,0 +1,23 @@
+@use 'sass:math';
+
+@function toggle-px-rem($value, $input-unit: 'px') {
+  $is-unitless: math.is-unitless($value);
+
+  @if $is-unitless {
+    @if $input-unit == 'px' {
+      @return math.div($value, 16) * 1rem;
+    } @else if $input-unit == 'rem' {
+      @return $value * 16px;
+    }
+  } @else {
+    $unit: math.unit($value);
+
+    @if $unit == 'rem' {
+      @return math.div($value, 1rem) * 16px;
+    } @else if $unit == 'px' {
+      @return math.div($value, 16px) * 1rem;
+    }
+  }
+
+  @return null;
+}
