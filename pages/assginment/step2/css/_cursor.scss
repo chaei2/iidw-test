@@ -1,0 +1,80 @@
+// 마우스 커서 바꾸기 이전 실험
+// 커서 경로 지정 방법
+
+// color- 214a73
+:root {
+  --secondary: #214a73;
+}
+body {
+  cursor: none;
+}
+
+#custom-cursor {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 2px;
+  height: 2px;
+
+  pointer-events: none;
+  background: var(--secondary);
+  border-radius: 50%;
+  mix-blend-mode: difference;
+
+  // 투명도 값을 0으로 해서 호버가 됐을떄 나오게 함
+  opacity: 0;
+  transform: scale(0.3);
+  transition: transform 0.5s;
+}
+
+#custom-cursor.zoom {
+  transform: scale(0.7);
+}
+
+body:hover #custom-cursor {
+  // 호버가 됐을 때 불투명하게 바뀜
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out 0.1s;
+}
+
+// ㅇㄴ 이거 좀 정리 해야하는데, ㅇㅂㅇ)..
+body:has(.card1:hover) #custom-cursor {
+  transform: scale(0.5);
+  // transition: transform 0.5s;
+}
+
+#custom-cursor:after {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 1em;
+  height: 1em;
+
+  overflow: hidden;
+  content: '';
+  background: var(--secondary);
+
+  box-shadow: 0 0 0 1em var(--secondary), 0 1em 0 1em var(--secondary),
+    -2.5em 1.5em 0 0.5em var(--secondary), 2.5em 1.5em 0 0.5em var(--secondary),
+    -3em -3em 0 0 var(--secondary), 3em -3em 0 0 var(--secondary),
+    -2em -2em 0 0 var(--secondary), 2em -2em 0 0 var(--secondary),
+    -3em -1em 0 0 var(--secondary), -2em -1em 0 0 var(--secondary),
+    2em -1em 0 0 var(--secondary), 3em -1em 0 0 var(--secondary),
+    -4em 0 0 0 var(--secondary), -3em 0 0 0 var(--secondary),
+    3em 0 0 0 var(--secondary), 4em 0 0 0 var(--secondary),
+    -5em 1em 0 0 var(--secondary), -4em 1em 0 0 var(--secondary),
+    4em 1em 0 0 var(--secondary), 5em 1em 0 0 var(--secondary),
+    -5em 2em 0 0 var(--secondary), 5em 2em 0 0 var(--secondary),
+    -5em 3em 0 0 var(--secondary), -3em 3em 0 0 var(--secondary),
+    3em 3em 0 0 var(--secondary), 5em 3em 0 0 var(--secondary),
+    -2em 4em 0 0 var(--secondary), -1em 4em 0 0 var(--secondary),
+    1em 4em 0 0 var(--secondary), 2em 4em 0 0 var(--secondary);
+
+  transform: translate(-50%, -50%);
+
+  // 저거 모양 사이트 https://css-tricks.com/the-shapes-of-css/
+}
