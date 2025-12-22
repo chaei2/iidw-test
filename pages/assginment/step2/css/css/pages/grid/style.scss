@@ -1,0 +1,49 @@
+@use '../../global/queries' as *;
+
+code {
+  color: var(--colour-tertiary);
+}
+
+.wrapper {
+  --gutter: var(--space-m-3xl);
+}
+
+.grid {
+  --gutter: var(--space-s-l);
+  --grid-min-item-size: 25ch;
+
+  background: var(--colour-surface-0);
+}
+
+.card {
+  border: var(--stroke-solid);
+
+  &__img {
+    aspect-ratio: 4 / 3;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__txt {
+    --flow-space: var(--space-s);
+
+    padding: var(--space-l);
+  }
+
+  &__title {
+    max-height: 2lh;
+    overflow: clip;
+    font-size: var(--font-step-1);
+    font-weight: var(--font-bold);
+    line-height: var(--leading-xs);
+  }
+
+  &__description {
+    max-height: 5lh;
+    overflow: clip;
+  }
+}

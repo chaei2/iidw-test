@@ -1,0 +1,12 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    var(--grid-placement, auto-fit),
+    minmax(min(100%, var(--grid-min-item-size, 16rem)), 1fr)
+  );
+  gap: var(--gutter, var(--space-s-l, 1.875rem));
+
+  &[data-equal-row] {
+    grid-auto-rows: 1fr;
+  }
+}

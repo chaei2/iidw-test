@@ -1,0 +1,9 @@
+@use '../../shared-config' as *;
+@use './space' as *;
+@use './breakpoint' as *;
+@use './config' as *;
+
+@mixin generate-dimension-variables() {
+  @include generate-breakpoint-variables($breakpoints, $breakpoint-postfixes);
+  @include generate-space-variables($utopia-config, $utopia-additional-config);
+}

@@ -1,0 +1,19 @@
+@use '../../global/queries' as *;
+
+code {
+  color: var(--colour-tertiary);
+}
+
+.wrapper {
+  --gutter: var(--space-m-3xl);
+}
+
+.repel {
+  --gap: 1rem;
+  border: var(--stroke);
+  // >는 repel 안에 있는 바로 하위 자녀
+  > p {
+    // ch단위는 해당 폰트의 해당 ...;;
+    max-inline-size: 20ch;
+  }
+}

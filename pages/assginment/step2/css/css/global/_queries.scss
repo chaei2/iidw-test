@@ -1,0 +1,70 @@
+@use '../../scss-utils/toggle-px-rem' as *;
+@use './shared-config' as *;
+@use 'sass:list';
+@use 'sass:map';
+
+@mixin wider-than($breakpoint-key) {
+  $breakpoint-index: list.index($breakpoint-postfixes, $breakpoint-key);
+
+  @if $breakpoint-index <= list.length($breakpoints) and $breakpoint-index >= 1
+  {
+    $breakpoint-min: toggle-px-rem(
+      list.nth($breakpoints, $breakpoint-index),
+      'px'
+    );
+
+    @media (width >= #{$breakpoint-min}) {
+      @content;
+    }
+  }
+}
+
+@mixin narrower-than($breakpoint-key) {
+  $breakpoint-index: list.index($breakpoint-postfixes, $breakpoint-key);
+  $breakpoint-index: $breakpoint-index + 1;
+
+  @if $breakpoint-index <= list.length($breakpoints) and $breakpoint-index >= 1
+  {
+    $breakpoint-max: toggle-px-rem(
+      list.nth($breakpoints, $breakpoint-index),
+      'px'
+    );
+
+    @media (width < #{$breakpoint-max}) {
+      @content;
+    }
+  }
+}
+
+@mixin container-wider-than($breakpoint-key) {
+  $breakpoint-index: list.index($breakpoint-postfixes, $breakpoint-key);
+
+  @if $breakpoint-index <= list.length($breakpoints) and $breakpoint-index >= 1
+  {
+    $breakpoint-min: toggle-px-rem(
+      list.nth($breakpoints, $breakpoint-index),
+      'px'
+    );
+
+    @container (width >= #{$breakpoint-min}) {
+      @content;
+    }
+  }
+}
+
+@mixin container-narrower-than($breakpoint-key) {
+  $breakpoint-index: list.index($breakpoint-postfixes, $breakpoint-key);
+  $breakpoint-index: $breakpoint-index + 1;
+
+  @if $breakpoint-index <= list.length($breakpoints) and $breakpoint-index >= 1
+  {
+    $breakpoint-max: toggle-px-rem(
+      list.nth($breakpoints, $breakpoint-index),
+      'px'
+    );
+
+    @container (width < #{$breakpoint-max}) {
+      @content;
+    }
+  }
+}

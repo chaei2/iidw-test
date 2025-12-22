@@ -1,0 +1,7 @@
+@use '../../../../scss-utils/custom-colour-generator' as *;
+@use './config-custom' as *;
+
+@mixin generate-custom-colour-variables {
+  /* custom colour */
+  @include custom-colour-generator($on-light-bg, $on-dark-bg);
+}

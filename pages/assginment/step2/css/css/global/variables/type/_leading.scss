@@ -1,0 +1,6 @@
+@mixin generate-leading-variables($leadings) {
+  /* leading */
+  @each $key, $value in $leadings {
+    --leading-#{$key}: #{$value};
+  }
+}

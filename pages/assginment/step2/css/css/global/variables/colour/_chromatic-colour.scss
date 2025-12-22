@@ -1,0 +1,40 @@
+@use '../../../../scss-utils/chromaric-colour-generator' as *;
+@use './config-harmonizer' as *;
+
+@mixin generate-chromatic-colour-variables() {
+  $hue-infix-map: (
+    'blue': 'primary',
+    'amber': 'secondary',
+    'pink': 'tertiary'
+  );
+  $prefix-postfix-level-map-list: (
+    (
+      'prefix': '',
+      'postfix': '',
+      'level': 70
+    ),
+    (
+      'prefix': 'on',
+      'postfix': '',
+      'level': 10
+    ),
+    (
+      'prefix': '',
+      'postfix': 'container',
+      'level': 20
+    ),
+    (
+      'prefix': 'on',
+      'postfix': 'container',
+      'level': 90
+    )
+  );
+
+  /* chromatic colour */
+  @include chromaric-colour-generator(
+    $hue-infix-map,
+    $prefix-postfix-level-map-list,
+    $on-light-bg,
+    $on-dark-bg
+  );
+}

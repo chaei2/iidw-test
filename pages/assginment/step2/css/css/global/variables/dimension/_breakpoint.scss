@@ -1,0 +1,20 @@
+@use '../../../../scss-utils/toggle-px-rem' as *;
+@use 'sass:list';
+
+@mixin generate-breakpoint-variables($breakpoints, $breakpoint-postfixes) {
+  $prev-postfix: null;
+
+  /* breakpoint */
+  @for $i from 1 through list.length($breakpoints) {
+    $postfix: list.nth($breakpoint-postfixes, $i);
+    $value: toggle-px-rem(list.nth($breakpoints, $i), 'px');
+
+    @if $prev-postfix {
+      --breakpoint-#{$prev-postfix}-max: #{$value};
+    }
+
+    --breakpoint-#{$postfix}-min: #{$value};
+
+    $prev-postfix: $postfix;
+  }
+}

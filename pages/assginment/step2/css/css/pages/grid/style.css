@@ -1,0 +1,40 @@
+code {
+  color: var(--colour-tertiary);
+}
+
+.wrapper {
+  --gutter: var(--space-m-3xl);
+}
+
+.grid {
+  --gutter: var(--space-s-l);
+  --grid-min-item-size: 25ch;
+  background: var(--colour-surface-0);
+}
+
+.card {
+  border: var(--stroke-solid);
+}
+.card__img {
+  aspect-ratio: 4/3;
+}
+.card__img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card__txt {
+  --flow-space: var(--space-s);
+  padding: var(--space-l);
+}
+.card__title {
+  max-height: 2lh;
+  overflow: clip;
+  font-size: var(--font-step-1);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-xs);
+}
+.card__description {
+  max-height: 5lh;
+  overflow: clip;
+}

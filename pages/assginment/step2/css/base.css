@@ -1,0 +1,715 @@
+@import 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css';
+@import 'https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  text-size-adjust: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block: 0;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+body {
+  min-block-size: 100vh;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+select,
+label {
+  line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  word-break: keep-all;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a:not([class]) {
+  color: currentcolor;
+  text-decoration-skip-ink: auto;
+}
+
+audio,
+canvas,
+embed,
+img,
+object,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+option,
+select,
+textarea {
+  font: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+:root {
+  /* fluid config */
+  --min-viewport-width: 20rem;
+  --max-viewport-width: 90rem;
+  --min-font-size: 1rem;
+  --max-font-size: 1.25rem;
+  /* font family */
+  --font-base: Pretendard Variable, sans-serif;
+  --font-mono: Martian Mono, monospace;
+  /* font size */
+  --font-step--2: clamp(0.6944rem, 0.6643rem + 0.1508vw, 0.8rem);
+  --font-step--1: clamp(0.8333rem, 0.7857rem + 0.2381vw, 1rem);
+  --font-step-0: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+  --font-step-1: clamp(1.2rem, 1.0964rem + 0.5179vw, 1.5625rem);
+  --font-step-2: clamp(1.44rem, 1.2934rem + 0.733vw, 1.9531rem);
+  --font-step-3: clamp(1.728rem, 1.5242rem + 1.0192vw, 2.4414rem);
+  --font-step-4: clamp(2.0736rem, 1.7941rem + 1.3974vw, 3.0518rem);
+  --font-step-5: clamp(2.4883rem, 2.1094rem + 1.8948vw, 3.8147rem);
+  /* font weight */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+  --font-black: 900;
+  /* leading */
+  --leading-xs: 1.2;
+  --leading-s: 1.4;
+  --leading-m: 1.6;
+  --leading-l: 1.8;
+  --leading-xl: 2;
+  /* breakpoint */
+  --breakpoint-sm-min: 20rem;
+  --breakpoint-sm-max: 33rem;
+  --breakpoint-md-min: 33rem;
+  --breakpoint-md-max: 55rem;
+  --breakpoint-lg-min: 55rem;
+  --breakpoint-lg-max: 90rem;
+  --breakpoint-xl-min: 90rem;
+  /* space */
+  --space-zero: clamp(0rem, 0rem + 0vw, 0rem);
+  --space-2xs: clamp(0.25rem, 0.2321rem + 0.0893vw, 0.3125rem);
+  --space-xs: clamp(0.5rem, 0.4643rem + 0.1786vw, 0.625rem);
+  --space-s: clamp(0.75rem, 0.6964rem + 0.2679vw, 0.9375rem);
+  --space-m: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+  --space-l: clamp(1.5rem, 1.3929rem + 0.5357vw, 1.875rem);
+  --space-xl: clamp(2rem, 1.8571rem + 0.7143vw, 2.5rem);
+  --space-2xl: clamp(3rem, 2.7857rem + 1.0714vw, 3.75rem);
+  --space-3xl: clamp(4rem, 3.7143rem + 1.4286vw, 5rem);
+  --space-4xl: clamp(6rem, 5.5714rem + 2.1429vw, 7.5rem);
+  --space-zero-2xs: clamp(0rem, -0.0893rem + 0.4464vw, 0.3125rem);
+  --space-2xs-xs: clamp(0.25rem, 0.1429rem + 0.5357vw, 0.625rem);
+  --space-xs-s: clamp(0.5rem, 0.375rem + 0.625vw, 0.9375rem);
+  --space-s-m: clamp(0.75rem, 0.6071rem + 0.7143vw, 1.25rem);
+  --space-m-l: clamp(1rem, 0.75rem + 1.25vw, 1.875rem);
+  --space-l-xl: clamp(1.5rem, 1.2143rem + 1.4286vw, 2.5rem);
+  --space-xl-2xl: clamp(2rem, 1.5rem + 2.5vw, 3.75rem);
+  --space-2xl-3xl: clamp(3rem, 2.4286rem + 2.8571vw, 5rem);
+  --space-3xl-4xl: clamp(4rem, 3rem + 5vw, 7.5rem);
+  --space-zero-xs: clamp(0rem, -0.1786rem + 0.8929vw, 0.625rem);
+  --space-zero-s: clamp(0rem, -0.2679rem + 1.3393vw, 0.9375rem);
+  --space-zero-m: clamp(0rem, -0.3571rem + 1.7857vw, 1.25rem);
+  --space-zero-l: clamp(0rem, -0.5357rem + 2.6786vw, 1.875rem);
+  --space-zero-xl: clamp(0rem, -0.7143rem + 3.5714vw, 2.5rem);
+  --space-m-xl: clamp(1rem, 0.5714rem + 2.1429vw, 2.5rem);
+  --space-m-2xl: clamp(1rem, 0.2143rem + 3.9286vw, 3.75rem);
+  --space-m-3xl: clamp(1rem, -0.1429rem + 5.7143vw, 5rem);
+  --space-m-4xl: clamp(1rem, -0.8571rem + 9.2857vw, 7.5rem);
+  --space-l-2xl: clamp(1.5rem, 0.8571rem + 3.2143vw, 3.75rem);
+  --space-l-3xl: clamp(1.5rem, 0.5rem + 5vw, 5rem);
+  --space-l-4xl: clamp(1.5rem, -0.2143rem + 8.5714vw, 7.5rem);
+  --space-xl-3xl: clamp(2rem, 1.1429rem + 4.2857vw, 5rem);
+  --space-xl-4xl: clamp(2rem, 0.4286rem + 7.8571vw, 7.5rem);
+  /* achromatic colour */
+  --colour-bg: light-dark(oklch(0.9954 0 0), oklch(0.1225 0 0));
+  --colour-on-surface-emphasis: light-dark(oklch(0.288 0 0), oklch(0.9645 0 0));
+  --colour-on-surface: light-dark(oklch(0.4497 0 0), oklch(0.8928 0 0));
+  --colour-on-surface-variant: light-dark(oklch(0.5328 0 0), oklch(0.842 0 0));
+  --colour-outline: light-dark(oklch(0.6745 0 0), oklch(0.7307 0 0));
+  --colour-outline-variant: light-dark(oklch(0.9165 0 0), oklch(0.4198 0 0));
+  --colour-surface--1: light-dark(oklch(0.9908 0 0), oklch(0.168 0 0));
+  --colour-surface-0: light-dark(oklch(0.9816 0 0), oklch(0.2304 0 0));
+  --colour-surface-1: light-dark(oklch(0.9722 0 0), oklch(0.2772 0 0));
+  --colour-surface-2: light-dark(oklch(0.9627 0 0), oklch(0.3161 0 0));
+  --colour-surface-3: light-dark(oklch(0.9531 0 0), oklch(0.35 0 0));
+  --colour-surface-4: light-dark(oklch(0.9434 0 0), oklch(0.3803 0 0));
+  --colour-inverse-surface: light-dark(oklch(0.3803 0 0), oklch(0.9434 0 0));
+  --colour-on-inverse-surface: light-dark(oklch(0.8928 0 0), oklch(0.4497 0 0));
+  /* chromatic colour */
+  --colour-primary: light-dark(
+    oklch(0.57 0.23 260),
+    oklch(0.81 0.09 260)
+  );
+  --colour-on-primary: light-dark(
+    oklch(0.93 0.03 260),
+    oklch(0.39 0.16 260)
+  );
+  --colour-primary-container: light-dark(
+    oklch(0.88 0.06 260),
+    oklch(0.49 0.2 260)
+  );
+  --colour-on-primary-container: light-dark(
+    oklch(0.4 0.16 260),
+    oklch(0.92 0.04 260)
+  );
+  --colour-secondary: light-dark(
+    oklch(0.57 0.12 75),
+    oklch(0.82 0.16 75)
+  );
+  --colour-on-secondary: light-dark(
+    oklch(0.93 0.05 75),
+    oklch(0.39 0.08 75)
+  );
+  --colour-secondary-container: light-dark(
+    oklch(0.88 0.1 75),
+    oklch(0.49 0.1 75)
+  );
+  --colour-on-secondary-container: light-dark(
+    oklch(0.4 0.08 75),
+    oklch(0.92 0.07 75)
+  );
+  --colour-tertiary: light-dark(
+    oklch(0.58 0.23 10),
+    oklch(0.83 0.1 10)
+  );
+  --colour-on-tertiary: light-dark(
+    oklch(0.93 0.03 10),
+    oklch(0.39 0.15 10)
+  );
+  --colour-tertiary-container: light-dark(
+    oklch(0.89 0.06 10),
+    oklch(0.49 0.2 10)
+  );
+  --colour-on-tertiary-container: light-dark(
+    oklch(0.4 0.16 10),
+    oklch(0.92 0.04 10)
+  );
+  --gutter: var(--space-m-l);
+  --transition-base: 250ms ease;
+  --transition-movement: 200ms linear;
+  --transition-fade: 300ms ease;
+  --transition-bounce: 500ms cubic-bezier(0.5, 0.05, 0.2, 1.5);
+  --stroke: 1px dashed var(--colour-outline);
+  --stroke-solid: 1px solid var(--colour-outline);
+  --radius-s: 0.25rem;
+  --radius-m: 0.75rem;
+  --radius-l: 2.5rem;
+  --uppercase-kerning: 0.04ch;
+}
+
+:root {
+  font-display: fallback;
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-base, sans-serif);
+  font-size: var(--font-step-0, 1rem);
+  font-size-adjust: from-font;
+  font-weight: var(--font-regular, 400);
+  line-height: var(--leading-m, 16);
+  color: var(--colour-on-surface);
+  background: var(--colour-surface--1);
+}
+
+:is(h1, h2, h3, h4) {
+  line-height: var(--leading-xs, 1.2);
+  text-wrap: balance;
+}
+
+h1 {
+  max-width: 20ch;
+  font-size: var(--font-step-4, 2.0736rem);
+}
+
+h2 {
+  max-width: 35ch;
+  font-size: var(--font-step-3, 1.728rem);
+}
+
+h3 {
+  max-width: 35ch;
+  font-size: var(--font-step-2, 1.44rem);
+}
+
+:is(h4, h5, h6) {
+  font-size: var(--font-step-1, 1.2rem);
+}
+
+small {
+  font-size: var(--font-step--1, 0.8333rem);
+}
+
+ins {
+  padding-inline: 0.3em;
+  color: var(--colour-on-surface-emphasis);
+  text-decoration: none;
+  background: var(--colour-surface-4);
+}
+
+:is(code, kbd, samp) {
+  padding: 0.2em 0.2em 0.05em;
+  font-family: var(--font-mono, monospace);
+  text-align: left;
+  word-spacing: normal;
+  hyphens: none;
+  word-break: normal;
+  overflow-wrap: normal;
+  tab-size: 2;
+  box-decoration-break: clone;
+}
+
+/* This is quite a new property, so we want code styles to at least, not be huge or tiny */
+@supports not (font-size-adjust: from-font) {
+  :is(code, kbd, samp) {
+    font-size: 0.8em;
+  }
+}
+pre:has(code) {
+  width: max-content;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+pre code {
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+kbd {
+  padding-block-end: 0.1em;
+  border: 1px solid;
+}
+
+var {
+  font-style: normal;
+  font-weight: var(--font-medium, 500);
+}
+
+q {
+  font-style: italic;
+}
+
+ul:not([class]) {
+  padding-inline-start: 2.5ch;
+  list-style-type: disc;
+}
+
+ul:not([class]) > li {
+  padding-inline-start: var(--space-zero-2xs, 0);
+}
+
+:is(ol, ul):not([class]) li + *,
+:is(ol, ul):not([class]) li > :is(ol, ul) {
+  margin-block-start: var(--flow-space, var(--space-2xs, 0.25rem));
+}
+
+ul ::marker {
+  font-size: 0.8lh;
+}
+
+ol ::marker {
+  font-size: 1em;
+  font-weight: var(--font-bold, 700);
+}
+
+/* Lists with classes and roles will be out of standard flow, so remove the default spacing */
+[role=list][class],
+[role=tablist][class] {
+  padding: 0;
+  margin-block: 0;
+}
+
+dt {
+  font-weight: var(--font-medium, 500);
+}
+
+dt + dd {
+  margin-block-start: var(--space-xs, 0.5rem);
+}
+
+dd + dt {
+  margin-block-start: var(--space-m, 1rem);
+}
+
+dd {
+  margin-inline-start: 1.5ch;
+}
+
+blockquote {
+  margin-inline: 0;
+  color: var(--colour-on-surface-emphasis);
+}
+
+blockquote footer {
+  margin-block-start: var(--space-m, 1rem);
+  font-size: var(--font-step--1, 0.8333rem);
+  color: var(--colour-on-surface);
+}
+
+blockquote q {
+  font-style: normal;
+}
+
+:is(video, iframe[src*=youtube], iframe[src*=vimeo]) {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  padding-block-start: 0.5em;
+  font-family: var(--font-mono, monospace);
+  font-size: var(--font-step--1, 0.8333rem);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: var(--stroke);
+}
+
+th {
+  font-weight: var(--font-bold, 700);
+  line-height: var(--leading-xs, 1.2);
+  text-align: left;
+}
+
+thead th {
+  padding-block: var(--space-s, 0.75rem);
+}
+
+td,
+th {
+  padding-block: var(--space-xs, 0.5rem);
+  padding-inline: var(--space-s, 0.75rem);
+}
+
+th:not(:only-of-type) {
+  border-block-end: var(--stroke);
+}
+
+th:only-of-type {
+  border-inline-end: var(--stroke);
+}
+
+:is(th, td) ~ :is(th, td) {
+  border-inline-start: var(--stroke);
+}
+
+tr + tr :is(th, td) {
+  border-block-start: var(--stroke);
+}
+
+caption {
+  margin-block-start: var(--space-m, 1rem);
+  caption-side: bottom;
+}
+
+a:not([class]):hover {
+  text-underline-offset: 0.2lh;
+}
+
+:is(h1, h2, h3, h4) a:not([class]) {
+  text-decoration-thickness: 0.1ex;
+  text-underline-offset: 0.2ex;
+}
+
+:is(h1, h2, h3, h4) a:not([class]):hover {
+  text-underline-offset: 0.3ex;
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-color, currentColor);
+  outline-offset: var(--focus-offset, 0.2lh);
+}
+
+/* Firefox is the only browser that doesn't outline the whole element unless you make it display: inline-block. That in itself causes multiple flow issues so we can detect it, using its own vendor prefix and reduce focus offset
+*/
+@supports (-moz-appearance: none) {
+  :root {
+    --focus-offset: 0.08em;
+  }
+}
+:target {
+  scroll-margin-block: 5lh;
+}
+
+::selection {
+  color: var(--colour-on-inverse-surface);
+  background: var(--colour-inverse-surface);
+}
+
+hr {
+  margin-block: var(--flow-space, var(--space-2xl, 3rem));
+  border: none;
+  border-block-start: var(--stroke);
+}
+
+svg:not([class]) {
+  width: auto;
+  height: 1lh;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+svg[role=img][width][height] {
+  width: revert;
+  height: revert;
+  padding: var(--space-m, 1rem);
+  background: var(--colour-inverse-surface);
+}
+
+/* There's a .flow composition, but this prevents forms from having to have that applied where markup is harder to control in certain systems. It still uses the --flow-space variables though to make managing space easier */
+form > * + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+form > *:not(input[type=hidden]) + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+:is(input, select, textarea) {
+  accent-color: var(--colour-primary);
+}
+
+:is(input:not([type=checkbox], [type=radio], [type=color]),
+select,
+textarea) {
+  width: 100%;
+  padding: 0.5em 0.8em;
+  color: var(--colour-on-surface);
+  background: var(--colour-surface-4);
+  border: var(--stroke-solid);
+  border-radius: var(--radius-s);
+}
+:is(input:not([type=checkbox], [type=radio], [type=color]),
+select,
+textarea)::placeholder {
+  color: var(--colour-outline);
+}
+
+label {
+  font-weight: var(--font-medium, 500);
+  line-height: var(--leading-xs, 1.2);
+}
+
+label::after {
+  white-space: pre;
+  content: "\a";
+}
+
+/* Usually label wraps checkbox and radio buttons, so we give ourselves more layout and text-flow control with flex */
+label:has(input) {
+  display: flex;
+  gap: var(--space-s, 0.75rem);
+  align-items: baseline;
+  font-weight: var(--font-medium, 500);
+}
+
+label:has(input) + label:has(input) {
+  --flow-space: var(--space-s, 0.75rem);
+  margin-block-start: var(--flow-space, 1em);
+}
+
+/* Slightly adjusts the vertical position of the check/radio */
+label:has(input) input {
+  transform: translateY(-0.1ex);
+}
+
+input:disabled {
+  background: color-mix(in oklch, var(--colour-on-surface) 4%, transparent);
+}
+
+input:disabled,
+label input:disabled + * {
+  cursor: not-allowed;
+}
+
+fieldset {
+  padding: var(--space-m, 1rem);
+  border: var(--stroke);
+}
+
+legend {
+  padding-inline: var(--space-s, 0.75rem);
+  font-weight: var(--font-medium, 500);
+}
+
+summary {
+  font-weight: var(--font-bold, 700);
+  cursor: pointer;
+}
+
+details[open] summary {
+  margin-block-end: var(--space-xs, 0.5rem);
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-s-m, 1.25rem));
+  align-items: var(--cluster-vertical-alignment, center);
+  justify-content: var(--cluster-horizontal-alignment, flex-start);
+}
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-placement, auto-fit), minmax(min(100%, var(--grid-min-item-size, 16rem)), 1fr));
+  gap: var(--gutter, var(--space-s-l, 1.875rem));
+}
+.grid[data-equal-row] {
+  grid-auto-rows: 1fr;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: [full-width-start] minmax(0, 1fr) [breakout-start] minmax(0, var(--gutter, 0)) [content-start] min(100% - 2 * var(--gutter, 0rem), var(--wrapper-max-width, var(--max-viewport-width, 90rem)) - 2 * var(--gutter, 0rem)) [content-end] minmax(0, var(--gutter, 0)) [breakout-end] minmax(0, 1fr) [full-width-end];
+}
+.grid-wrapper > * {
+  grid-column: content;
+}
+
+.repel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-s-m, 1.25rem));
+  align-items: var(--repel-vertical-alignment, center);
+  justify-content: space-between;
+}
+
+.repel[data-nowrap] {
+  flex-wrap: nowrap;
+}
+
+.sidebar[data-direction=rtl] > :last-child, .sidebar:not([data-direction]) > :first-child {
+  flex-grow: 1;
+  flex-basis: var(--sidebar-fixed-width, var(--min-viewport-width, 20rem));
+}
+
+.sidebar[data-direction=rtl] > :first-child, .sidebar:not([data-direction]) > :last-child {
+  flex-grow: 999;
+  flex-basis: 0;
+  min-inline-size: min(100%, var(--sidebar-flexible-min-width, calc(50% - 0.5 * var(--gutter, var(--space-s-l, 1.875rem)))));
+}
+
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-s-l, 1.875rem));
+}
+.sidebar[data-reversed] {
+  flex-direction: row-reverse;
+}
+
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-s-l, 1.875rem));
+  align-items: var(--switcher-vertical-alignment, flex-start);
+}
+.switcher > * {
+  flex-grow: 1;
+  flex-basis: calc((var(--switcher-container-min-width, 40rem) - 100%) * 999999);
+  max-inline-size: 100%;
+}
+
+.wrapper {
+  position: relative;
+  box-sizing: border-box;
+  max-inline-size: min(100%, var(--wrapper-max-width, var(--max-viewport-width, 90rem)));
+  padding-inline: var(--gutter, 0);
+  margin-inline: auto;
+}
+
+.region {
+  position: relative;
+  padding-block: var(--region-space, var(--space-xl-2xl, 5rem));
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip-path: rect(0 0 0 0);
+}

@@ -1,0 +1,97 @@
+@use '../../../../../node_modules/utopia-core-scss/src/utopia.scss' as utopia;
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:string';
+
+@mixin generate-space-variables($utopia-config, $utopia-additional-config) {
+  $min-width: map.get($utopia-config, 'minWidthPxNum');
+  $max-width: map.get($utopia-config, 'maxWidthPxNum');
+  $min-size: map.get($utopia-config, 'minFontSizePxNum');
+  $max-size: map.get($utopia-config, 'maxFontSizePxNum');
+  $positive-steps: map.get($utopia-additional-config, 'positiveSteps');
+  $negative-steps: map.get($utopia-additional-config, 'negativeSteps');
+  $custom-sizes: map.get($utopia-additional-config, 'customSizes');
+  $label-remap: (
+    '4xs': zero,
+    '3xs': '2xs',
+    '2xs': 'xs',
+    'xs': 's',
+    's': 'm',
+    'm': 'l',
+    'l': 'xl',
+    'xl': '2xl',
+    '2xl': '3xl',
+    '3xl': '4xl',
+    '4xl': '5xl',
+    '5xl': '6xl',
+    '6xl': '7xl'
+  );
+  $reversed-label-remap: (
+    zero: '4xs',
+    '2xs': '3xs',
+    'xs': '2xs',
+    's': 'xs',
+    'm': 's',
+    'l': 'm',
+    'xl': 'l',
+    '2xl': 'xl',
+    '3xl': '2xl',
+    '4xl': '3xl',
+    '5xl': '4xl',
+    '6xl': '5xl',
+    '7xl': '6xl'
+  );
+  $relabeled-custom-sizes: ();
+
+  @each $label in $custom-sizes {
+    $splitted-label: string.split($label, '-');
+    $remapped-label-1: map.get(
+      $reversed-label-remap,
+      list.nth($splitted-label, 1)
+    );
+    $remapped-label-2: map.get(
+      $reversed-label-remap,
+      list.nth($splitted-label, 2)
+    );
+    $relabeled-custom-sizes: list.append(
+      $relabeled-custom-sizes,
+      '#{$remapped-label-1}-#{$remapped-label-2}',
+      comma
+    );
+  }
+
+  $calculated: utopia.calculateSpaceScale(
+    (
+      'minWidth': $min-width,
+      'maxWidth': $max-width,
+      'minSize': $min-size,
+      'maxSize': $max-size,
+      'positiveSteps': $positive-steps,
+      'negativeSteps': $negative-steps,
+      'customSizes': $relabeled-custom-sizes,
+      'relativeTo': 'viewport-width'
+    )
+  );
+
+  /* space */
+  @each $key, $value in $calculated {
+    @if $key != 'allPairs' {
+      @each $map in $value {
+        $label: map.get($map, 'label');
+        $clamp: map.get($map, 'clamp');
+        $splitted-label: string.split($label, '-');
+        $label-1: list.nth($splitted-label, 1);
+        $remapped-label-1: map.get($label-remap, $label-1);
+
+        @if list.length($splitted-label) > 1 {
+          $label-2: list.nth($splitted-label, 2);
+          $remapped-label-2: map.get($label-remap, $label-2);
+
+          --space-#{$remapped-label-1}-#{$remapped-label-2}: #{$clamp};
+        } @else {
+          --space-#{$remapped-label-1}: #{$clamp};
+        }
+      }
+    }
+  }
+}

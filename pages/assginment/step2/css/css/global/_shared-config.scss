@@ -1,0 +1,10 @@
+@use 'sass:list';
+
+$breakpoints: (320, 528, 880, 1440);
+$breakpoint-postfixes: ('sm', 'md', 'lg', 'xl', '2xl');
+$utopia-config: (
+  'minWidthPxNum': list.nth($breakpoints, 1),
+  'maxWidthPxNum': list.nth($breakpoints, list.length($breakpoints)),
+  'minFontSizePxNum': 16,
+  'maxFontSizePxNum': 20
+);

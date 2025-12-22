@@ -1,0 +1,11 @@
+@use './achromatic-colour' as *;
+@use './chromatic-colour' as *;
+@use './custom-colour' as *;
+
+@mixin generate-colour-variables() {
+  @include generate-achromatic-colour-variables;
+  @include generate-chromatic-colour-variables;
+
+  // 커스텀 색상 사용시 활성화
+  // @include generate-custom-colour-variables;
+}

@@ -1,0 +1,49 @@
+.wrapper {
+  --gutter: var(--space-m-3xl);
+}
+
+.prose {
+  --flow-space: var(--space-xl);
+}
+
+.prose :is(h1, h2, h3) {
+  hyphens: auto;
+  overflow-wrap: anywhere;
+}
+@media (width < 55rem) {
+  .prose :is(h1, h2, h3) {
+    hyphens: unset;
+    overflow-wrap: unset;
+  }
+}
+
+.prose :is(p, li, dl, figcaption, blockquote) {
+  max-width: 60ch;
+  text-wrap: pretty;
+}
+
+.prose :is(h1, h2, h3, h4) + *:not([class]) {
+  --flow-space: var(--space-l);
+}
+
+.prose :is(figure, table),
+.prose :is(figure, table) + * {
+  --flow-space: var(--space-3xl);
+}
+
+.prose * + :is(h1, h2, h3, h4):not([class]) {
+  --flow-space: var(--space-2xl);
+}
+
+.prose :is(ul, ol):not([class]) li + li,
+.prose :is(ul, ol):not([class]) li > :is(ol, ul) {
+  --flow-space: var(--space-2xs);
+}
+
+.prose hr {
+  --flow-space: var(--space-3xl);
+}
+
+.prose :is(img, picture, video) {
+  border: var(--stroke-solid);
+}

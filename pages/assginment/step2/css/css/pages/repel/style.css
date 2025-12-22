@@ -1,0 +1,15 @@
+code {
+  color: var(--colour-tertiary);
+}
+
+.wrapper {
+  --gutter: var(--space-m-3xl);
+}
+
+.repel {
+  --gap: 1rem;
+  border: var(--stroke);
+}
+.repel > p {
+  max-inline-size: 20ch;
+}

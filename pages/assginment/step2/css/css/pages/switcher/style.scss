@@ -1,0 +1,70 @@
+@use '../../global/queries' as *;
+
+code {
+  color: var(--colour-tertiary);
+}
+
+.wrapper {
+  --gutter: var(--space-m-3xl);
+}
+
+.switcher {
+  --gutter: var(--space-s-l);
+  --switcher-container-min-width: calc(
+    var(--breakpoint-md-max) - 2 * var(--space-m-3xl)
+  );
+
+  background: var(--colour-surface-0);
+}
+
+.card {
+  border: var(--stroke-solid);
+
+  &__img {
+    aspect-ratio: 4 / 3;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__txt {
+    --flow-space: var(--space-s);
+
+    padding: var(--space-l);
+  }
+
+  &__title {
+    max-height: 2lh;
+    overflow: clip;
+    font-size: var(--font-step-1);
+    font-weight: var(--font-bold);
+    line-height: var(--leading-xs);
+  }
+
+  &__description {
+    max-height: 5lh;
+    overflow: clip;
+  }
+
+  @include narrower-than('md') {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1.5fr);
+    gap: var(--space-xs);
+
+    &__img {
+      aspect-ratio: 1 / 1;
+    }
+
+    &__description {
+      max-height: 4lh;
+      overflow: clip;
+    }
+  }
+
+  @include narrower-than('sm') {
+    display: unset;
+  }
+}

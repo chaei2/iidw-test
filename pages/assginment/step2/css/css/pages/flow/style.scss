@@ -1,0 +1,15 @@
+code {
+  color: var(--colour-tertiary);
+}
+
+.wrapper {
+  --gutter: var(--space-m-3xl);
+}
+
+.flow {
+  background: var(--colour-surface-0);
+}
+
+.flow > * + * {
+  border: var(--stroke-solid);
+}

@@ -1,3 +1,52 @@
+:root {
+  --secondary: #214a73;
+}
+
+body {
+  cursor: none;
+}
+
+#custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  pointer-events: none;
+  background: var(--secondary);
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: transform 0.5s;
+}
+
+#custom-cursor.zoom {
+  transform: scale(0.7);
+}
+
+body:hover #custom-cursor {
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out 0.1s;
+}
+
+body:has(.card1:hover) #custom-cursor {
+  transform: scale(0.5);
+}
+
+#custom-cursor:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  content: "";
+  background: var(--secondary);
+  box-shadow: 0 0 0 1em var(--secondary), 0 1em 0 1em var(--secondary), -2.5em 1.5em 0 0.5em var(--secondary), 2.5em 1.5em 0 0.5em var(--secondary), -3em -3em 0 0 var(--secondary), 3em -3em 0 0 var(--secondary), -2em -2em 0 0 var(--secondary), 2em -2em 0 0 var(--secondary), -3em -1em 0 0 var(--secondary), -2em -1em 0 0 var(--secondary), 2em -1em 0 0 var(--secondary), 3em -1em 0 0 var(--secondary), -4em 0 0 0 var(--secondary), -3em 0 0 0 var(--secondary), 3em 0 0 0 var(--secondary), 4em 0 0 0 var(--secondary), -5em 1em 0 0 var(--secondary), -4em 1em 0 0 var(--secondary), 4em 1em 0 0 var(--secondary), 5em 1em 0 0 var(--secondary), -5em 2em 0 0 var(--secondary), 5em 2em 0 0 var(--secondary), -5em 3em 0 0 var(--secondary), -3em 3em 0 0 var(--secondary), 3em 3em 0 0 var(--secondary), 5em 3em 0 0 var(--secondary), -2em 4em 0 0 var(--secondary), -1em 4em 0 0 var(--secondary), 1em 4em 0 0 var(--secondary), 2em 4em 0 0 var(--secondary);
+  transform: translate(-50%, -50%);
+}
+
 *,
 *::before,
 *::after {
@@ -82,82 +131,6 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-:root {
-  --secondary: #214a73;
-}
-
-body {
-  cursor: none;
-}
-
-#custom-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 2px;
-  height: 2px;
-  pointer-events: none;
-  background: var(--secondary);
-  border-radius: 50%;
-  mix-blend-mode: difference;
-  opacity: 0;
-  transform: scale(0.3);
-  transition: transform 0.5s;
-}
-
-#custom-cursor.zoom {
-  transform: scale(0.7);
-}
-
-body:hover #custom-cursor {
-  opacity: 1;
-  transition: opacity 0.6s ease-in-out 0.1s;
-}
-
-body:has(.card1:hover) #custom-cursor {
-  transform: scale(0.5);
-}
-
-#custom-cursor:after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 1em;
-  height: 1em;
-  overflow: hidden;
-  content: "";
-  background: var(--secondary);
-  box-shadow: 0 0 0 1em var(--secondary), 0 1em 0 1em var(--secondary), -2.5em 1.5em 0 0.5em var(--secondary), 2.5em 1.5em 0 0.5em var(--secondary), -3em -3em 0 0 var(--secondary), 3em -3em 0 0 var(--secondary), -2em -2em 0 0 var(--secondary), 2em -2em 0 0 var(--secondary), -3em -1em 0 0 var(--secondary), -2em -1em 0 0 var(--secondary), 2em -1em 0 0 var(--secondary), 3em -1em 0 0 var(--secondary), -4em 0 0 0 var(--secondary), -3em 0 0 0 var(--secondary), 3em 0 0 0 var(--secondary), 4em 0 0 0 var(--secondary), -5em 1em 0 0 var(--secondary), -4em 1em 0 0 var(--secondary), 4em 1em 0 0 var(--secondary), 5em 1em 0 0 var(--secondary), -5em 2em 0 0 var(--secondary), 5em 2em 0 0 var(--secondary), -5em 3em 0 0 var(--secondary), -3em 3em 0 0 var(--secondary), 3em 3em 0 0 var(--secondary), 5em 3em 0 0 var(--secondary), -2em 4em 0 0 var(--secondary), -1em 4em 0 0 var(--secondary), 1em 4em 0 0 var(--secondary), 2em 4em 0 0 var(--secondary);
-  transform: translate(-50%, -50%);
-}
-
-@font-face {
-  font-family: "SsallakNun";
-  font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HailSnow.woff") format("woff");
-  font-display: swap;
-}
-:root {
-  --secondary: #214a73;
-}
-
-.cover {
-  display: flex;
-  width: 100vw;
-}
-
-.cover:nth-child(2) {
-  justify-content: flex-end;
-  font-family: SsallakNun;
-  font-size: 1.75rem;
-  color: var(--secondary);
-}
-
-@media screen and (max-width: 46.25rem) {
-  .cover:nth-child(2) {
-    font-size: 1.25rem;
-  }
-}
 :root {
   --primary: #bcd0e7;
   --primary80: #bcd0e780;

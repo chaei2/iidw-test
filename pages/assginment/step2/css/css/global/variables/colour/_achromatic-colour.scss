@@ -1,0 +1,113 @@
+@use '../../../../scss-utils/achromatic-colour-generator' as *;
+
+@mixin generate-achromatic-colour-variables {
+  $variable-name-value-map: (
+    'bg': (
+      'light-level': 99,
+      'dark-level': 1
+    ),
+    'on-surface-emphasis': (
+      'light-value': (
+        0.288,
+        0,
+        0
+      ),
+      'dark-value': (
+        0.9645,
+        0,
+        0
+      )
+    ),
+    'on-surface': (
+      'light-value': (
+        0.4497,
+        0,
+        0
+      ),
+      'dark-value': (
+        0.8928,
+        0,
+        0
+      )
+    ),
+    'on-surface-variant': (
+      'light-value': (
+        0.5328,
+        0,
+        0
+      ),
+      'dark-value': (
+        0.842,
+        0,
+        0
+      )
+    ),
+    'outline': (
+      'light-value': (
+        0.6745,
+        0,
+        0
+      ),
+      'dark-value': (
+        0.7307,
+        0,
+        0
+      )
+    ),
+    'outline-variant': (
+      'light-value': (
+        0.9165,
+        0,
+        0
+      ),
+      'dark-value': (
+        0.4198,
+        0,
+        0
+      )
+    ),
+    'surface--1': (
+      'light-level': 98,
+      'dark-level': 2
+    ),
+    'surface-0': (
+      'light-level': 96,
+      'dark-level': 4
+    ),
+    'surface-1': (
+      'light-level': 94,
+      'dark-level': 6
+    ),
+    'surface-2': (
+      'light-level': 92,
+      'dark-level': 8
+    ),
+    'surface-3': (
+      'light-level': 90,
+      'dark-level': 10
+    ),
+    'surface-4': (
+      'light-level': 88,
+      'dark-level': 12
+    ),
+    'inverse-surface': (
+      'light-level': 12,
+      'dark-level': 88
+    ),
+    'on-inverse-surface': (
+      'light-value': (
+        0.8928,
+        0,
+        0
+      ),
+      'dark-value': (
+        0.4497,
+        0,
+        0
+      )
+    )
+  );
+
+  /* achromatic colour */
+  @include achromatic-colour-generator($variable-name-value-map);
+}
