@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_선" data-name="선" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00f6ff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #ff4141;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #aeffc7;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" x="70.62" y="38.42" width="18.56" height="323.17"/>
+  <rect class="cls-3" x="180.67" y="38.42" width="18.56" height="323.17"/>
+  <rect class="cls-1" x="290.72" y="38.42" width="18.56" height="323.17"/>
+  <rect class="cls-1" x="400.77" y="38.42" width="18.56" height="323.17"/>
+  <rect class="cls-2" x="510.82" y="38.42" width="18.56" height="323.17"/>
+</svg>
