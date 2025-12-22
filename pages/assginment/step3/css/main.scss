@@ -313,10 +313,18 @@ a {
   border: solid 0.5px #bcd0e790;
 }
 
+.paddingB {
+  padding-bottom: 1rem;
+}
+
+.paddingU{
+  padding-top: 1rem;
+}
+
 .textBox {
   gap: 0.5rem;
   max-width: 53.125rem;
-  padding-bottom: 1rem;
+
   // margin: 1rem;
 }
 
