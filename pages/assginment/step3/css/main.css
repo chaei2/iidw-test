@@ -493,6 +493,10 @@ a {
 }
 
 .stroke {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   border: solid 0.5px rgba(188, 208, 231, 0.5647058824);
 }
 
@@ -504,6 +508,12 @@ a {
 
 .center {
   align-content: center;
+}
+
+.card3 {
+  width: 100%;
+  max-width: 53.125rem;
+  margin: 0 auto;
 }
 
 .img-copper {
