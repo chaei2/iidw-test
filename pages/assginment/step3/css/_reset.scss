@@ -65,8 +65,8 @@ h4 {
 
 // 넣어도 그만
 a:not([class]) {
-  text-decoration-skip-ink: auto;
   color: currentColor;
+  text-decoration-skip-ink: auto;
 }
 
 // 그림 넣어주는 태그가 기본적으로 인라인 속성임
@@ -77,8 +77,8 @@ picture,
 canvas,
 svg,
 video {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
 // 나머지들은 어떻게 해도 비주얼에 큰 차이가 없음

@@ -52,9 +52,9 @@ h4 {
 }
 
 a:not([class]) {
+  color: currentColor;
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
-  color: currentColor;
 }
 
 img,
@@ -62,8 +62,8 @@ picture,
 canvas,
 svg,
 video {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
 input,
@@ -84,6 +84,7 @@ textarea:not([rows]) {
 
 :root {
   --primary: #bcd0e7;
+  --primary90: #bcd0e790;
   --primary80: #bcd0e780;
   --secondary: #214a73;
   --cardBg: #9d9d9d30;
@@ -169,6 +170,10 @@ body:has(.card1:hover) #custom-cursor {
 body {
   padding-bottom: 4.375rem;
   background: var(--BgGradient);
+}
+
+.primary90 {
+  color: var(--primary90);
 }
 
 .margin-in {
@@ -302,6 +307,11 @@ body {
   text-align: center;
 }
 
+.p-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .cards {
   width: -moz-fit-content;
   width: fit-content;
@@ -317,7 +327,6 @@ body {
   margin-inline: auto;
   background-color: var(--cardBg);
   border-radius: 5%;
-  transform: scale(0.9);
   transition: transform 0.5s;
 }
 
@@ -332,6 +341,7 @@ a {
 }
 
 .copperImage {
+  align-content: center;
   opacity: 0.5;
 }
 
