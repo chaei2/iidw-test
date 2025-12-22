@@ -450,7 +450,6 @@ a {
 
 .copperImage {
   align-content: center;
-  opacity: 0.5;
 }
 
 .grid-1 {
@@ -490,6 +489,12 @@ a {
     transform: scale(0.8);
   }
 }
+.card3 {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 46.25rem) {
   .h1-text {
     padding-bottom: 0.8rem;
