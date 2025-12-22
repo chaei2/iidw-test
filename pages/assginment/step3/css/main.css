@@ -489,10 +489,20 @@ a {
     transform: scale(0.8);
   }
 }
+.padding-4 {
+  padding: 2rem;
+}
+
+.textBox {
+  max-width: 53.125rem;
+}
+
 .card3 {
-  width: 500px;
-  height: 500px;
   margin: 0 auto;
+}
+
+.img-copper {
+  max-width: 28.125rem;
 }
 
 @media screen and (max-width: 46.25rem) {
