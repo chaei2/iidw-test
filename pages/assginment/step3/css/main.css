@@ -225,6 +225,10 @@ body {
   gap: 0.5rem;
 }
 
+.nevigation .flex {
+  align-items: center;
+  justify-content: center;
+}
 .nevigation .C,
 .nevigation .F {
   align-self: center;
@@ -235,7 +239,6 @@ body {
   align-self: center;
   min-width: 35px;
   height: 27.4704px;
-  margin-inline: auto;
 }
 
 .padding-1 {
@@ -300,7 +303,7 @@ body {
 }
 
 .card1 {
-  align-items: center;
+  align-content: center;
   /* display: flex; */
   justify-content: center;
   width: 303px;
