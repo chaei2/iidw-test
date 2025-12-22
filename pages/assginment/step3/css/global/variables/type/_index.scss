@@ -1,0 +1,16 @@
+@use '../../shared-config' as *;
+@use './font-family' as *;
+@use './font-size' as *;
+@use './font-weight' as *;
+@use './leading' as *;
+@use './config' as *;
+
+@mixin generate-type-variables {
+  @include generate-font-family-variables($font-families);
+  @include generate-font-size-variables(
+    $utopia-config,
+    $utopia-additional-config
+  );
+  @include generate-font-weight-variables($font-weights);
+  @include generate-leading-variables($leadings);
+}

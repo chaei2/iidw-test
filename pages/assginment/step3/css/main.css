@@ -97,6 +97,18 @@ textarea:not([rows]) {
   );
   --fontA: Aldrich;
   --regular: 400;
+  --space-s-l: 1rem;
+  --breakpoint-md-max: 46.25rem;
+  --space-m-3xl: 2rem;
+  --colour-surface-0: #ffffff;
+  --colour-tertiary: #666666;
+  --stroke-solid: 1px solid #000;
+  --space-s: 0.5rem;
+  --space-l: 1.5rem;
+  --font-step-1: 1.25rem;
+  --font-bold: 700;
+  --leading-xs: 1.2;
+  --space-xs: 0.25rem;
 }
 
 body {

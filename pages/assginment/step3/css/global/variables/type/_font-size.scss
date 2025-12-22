@@ -1,0 +1,29 @@
+@use '../../../../../node_modules/utopia-core-scss/src/utopia.scss' as utopia;
+@use 'sass:map';
+
+@mixin generate-font-size-variables($utopia-config, $utopia-additional-config) {
+  $min-width: map.get($utopia-config, 'minWidthPxNum');
+  $max-width: map.get($utopia-config, 'maxWidthPxNum');
+  $min-size: map.get($utopia-config, 'minFontSizePxNum');
+  $max-size: map.get($utopia-config, 'maxFontSizePxNum');
+  $min-type-scale: map.get($utopia-additional-config, 'minTypeScale');
+  $max-type-scale: map.get($utopia-additional-config, 'maxTypeScale');
+  $positive-steps: map.get($utopia-additional-config, 'positiveSteps');
+  $negative-steps: map.get($utopia-additional-config, 'negativeSteps');
+
+  /* font size */
+  @include utopia.generateTypeScale(
+    (
+      'minWidth': $min-width,
+      'maxWidth': $max-width,
+      'minFontSize': $min-size,
+      'maxFontSize': $max-size,
+      'minTypeScale': $min-type-scale,
+      'maxTypeScale': $max-type-scale,
+      'positiveSteps': $positive-steps,
+      'negativeSteps': $negative-steps,
+      'prefix': 'font-step-',
+      'relativeTo': 'viewport-width'
+    )
+  );
+}

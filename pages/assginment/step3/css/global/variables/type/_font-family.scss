@@ -1,0 +1,6 @@
+@mixin generate-font-family-variables($font-families) {
+  /* font family */
+  @each $key, $value in $font-families {
+    --font-#{$key}: #{$value};
+  }
+}

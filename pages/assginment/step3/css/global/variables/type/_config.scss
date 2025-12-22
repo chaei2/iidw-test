@@ -1,0 +1,32 @@
+@import 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css';
+@import 'https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap';
+
+$font-families: (
+  base: (
+    'Pretendard Variable',
+    sans-serif
+  ),
+  mono: (
+    'Martian Mono',
+    monospace
+  )
+);
+$font-weights: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+  'black': 900
+);
+$leadings: (
+  'xs': 1.2,
+  's': 1.4,
+  'm': 1.6,
+  'l': 1.8,
+  'xl': 2
+);
+$utopia-additional-config: (
+  'minTypeScale': 1.2,
+  'maxTypeScale': 1.25,
+  'positiveSteps': 5,
+  'negativeSteps': 2
+);

@@ -1,0 +1,31 @@
+$utopia-additional-config: (
+  'positiveSteps': (
+    1.5,
+    2,
+    3,
+    4,
+    6
+  ),
+  'negativeSteps': (
+    0.75,
+    0.5,
+    0.25,
+    0
+  ),
+  'customSizes': (
+    'zero-xs',
+    'zero-s',
+    'zero-m',
+    'zero-l',
+    'zero-xl',
+    'm-xl',
+    'm-2xl',
+    'm-3xl',
+    'm-4xl',
+    'l-2xl',
+    'l-3xl',
+    'l-4xl',
+    'xl-3xl',
+    'xl-4xl'
+  )
+);

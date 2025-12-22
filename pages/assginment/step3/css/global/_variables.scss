@@ -1,0 +1,43 @@
+@use '../../scss-utils/toggle-px-rem' as *;
+@use './variables/type' as *;
+@use './variables/dimension' as *;
+@use './variables/colour' as *;
+@use './shared-config' as *;
+@use 'sass:map';
+@use 'sass:math';
+
+:root {
+  /* fluid config */
+  --min-viewport-width: #{toggle-px-rem(
+      map.get($utopia-config, 'minWidthPxNum'),
+      'px'
+    )};
+  --max-viewport-width: #{toggle-px-rem(
+      map.get($utopia-config, 'maxWidthPxNum'),
+      'px'
+    )};
+  --min-font-size: #{toggle-px-rem(
+      map.get($utopia-config, 'minFontSizePxNum'),
+      'px'
+    )};
+  --max-font-size: #{toggle-px-rem(
+      map.get($utopia-config, 'maxFontSizePxNum'),
+      'px'
+    )};
+
+  @include generate-type-variables;
+  @include generate-dimension-variables;
+  @include generate-colour-variables;
+
+  --gutter: var(--space-m-l);
+  --transition-base: 250ms ease;
+  --transition-movement: 200ms linear;
+  --transition-fade: 300ms ease;
+  --transition-bounce: 500ms cubic-bezier(0.5, 0.05, 0.2, 1.5);
+  --stroke: 1px dashed var(--colour-outline);
+  --stroke-solid: 1px solid var(--colour-outline);
+  --radius-s: 0.25rem;
+  --radius-m: 0.75rem;
+  --radius-l: 2.5rem;
+  --uppercase-kerning: 0.04ch;
+}
