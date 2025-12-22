@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_커넥터" data-name="커넥터" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffff20;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #2f7cb0;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="7"/>
+      <feFlood flood-color="#1d1d99" flood-opacity=".2"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect class="cls-1" x="56.56" y="88.42" width="18.56" height="323.17" transform="translate(-184.16 315.84) rotate(-90)"/>
+  <g>
+    <polygon class="cls-3" points="341.49 228.58 341.49 271.42 227.42 266.42 227.42 233.58 341.49 228.58"/>
+    <g>
+      <rect class="cls-4" x="438.08" y="241.94" width="51.06" height="16.13" transform="translate(213.61 713.61) rotate(-90)"/>
+      <path class="cls-4" d="M487.8,239.77c3.67,0,3.67,20.46,0,20.46h-16.13v-20.46h16.13Z"/>
+    </g>
+    <rect class="cls-2" x="341.49" y="219.01" width="34.27" height="61.98"/>
+    <g>
+      <rect class="cls-3" x="383.03" y="210.1" width="65.24" height="79.79" transform="translate(165.65 665.65) rotate(-90)"/>
+      <rect class="cls-4" x="384.24" y="268.34" width="23.34" height="5.21" transform="translate(124.96 666.86) rotate(-90)"/>
+      <rect class="cls-4" x="384.24" y="226.45" width="23.34" height="5.21" transform="translate(166.86 624.96) rotate(-90)"/>
+    </g>
+  </g>
+</svg>
