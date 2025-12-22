@@ -168,13 +168,14 @@ body {
 }
 
 .p-text {
-  font-size: 18px;
+  font-size: 18.5px;
   font-weight: bold;
 }
 
 .cards {
   // align-content: center;
   width: fit-content;
+  // min-width: 636px;
   // 내용만큼(= Hug)
   margin-inline: auto;
 
@@ -183,9 +184,9 @@ body {
 }
 
 .card1 {
+  // display: flex;
+  flex-direction: column;
   align-content: center;
-
-  /* display: flex; */
   justify-content: center;
   width: 303px;
   height: 262px;
@@ -193,7 +194,7 @@ body {
   background-color: var(--cardBg);
   border-radius: 5%;
 
-  // transform: scale(0.9);
+  transform: scale(0.9);
   transition: transform 0.5s;
 }
 
@@ -213,6 +214,9 @@ a {
   align-content: center;
   // align-items: center;
   // justify-content: center;
+  // width: 100%;
+  height: auto;
+  max-height: 100%;
   opacity: 0.5;
 }
 
@@ -242,7 +246,7 @@ a {
     font-size: 17.5px;
   }
   .cards {
-    transform: scale(0.7);
+    transform: scale(0.8);
   }
 }
 
@@ -265,7 +269,7 @@ a {
     font-size: 15px;
   }
   .cards {
-    transform: scale(0.6);
+    transform: scale(0.7);
   }
 }
 
