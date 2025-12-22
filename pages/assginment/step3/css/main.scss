@@ -5,7 +5,6 @@
 @use './switcher';
 
 body {
-  // min-width: 530px;
   padding-bottom: 4.375rem;
   background: var(--BgGradient);
 }
@@ -33,7 +32,7 @@ body {
 
 .section {
   gap: 1rem;
-  padding: 0 clamp(1rem, 5vw, 10em);
+  padding: 0px 10em 0px 10em;
 }
 .flex {
   display: flex;
@@ -191,7 +190,7 @@ body {
   // width: fit-content;
   max-width: 1000px;
   // 내용만큼(= Hug)
-  // margin-inline: auto;
+  margin-inline: auto;
   // align-content: center;
 
   // (안전장치)
@@ -208,13 +207,13 @@ body {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  width: auto;
+  width: 303px;
   // height: 262px;
 
-  // margin-inline: auto;
+  margin-inline: auto;
   background-color: var(--cardBg);
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
+  // border-top-left-radius: 5%;
+  // border-top-right-radius: 5%;
 }
 
 a {
@@ -312,9 +311,9 @@ a {
 }
 // ㅇㄴ ㅜㅜㅜㅜ ㅜㅜㅜㅜㅜ ㅜㅜㅜㅜ  ㅜㅜㅜ 왜 안되는데
 .switcher > * {
-  flex-grow: 2;
+  flex-grow: 1;
   flex-basis: calc(
-    (var(--switcher-container-min-width, 40rem) - 50.6.51%) * 999999
+    (var(--switcher-container-min-width, 40rem) - 50.7%) * 999999
   );
   max-inline-size: 100%;
 }

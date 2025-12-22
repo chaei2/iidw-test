@@ -415,8 +415,6 @@ body {
   width: 303px;
   margin-inline: auto;
   background-color: var(--cardBg);
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
 }
 
 a {
@@ -497,7 +495,7 @@ a {
 }
 
 .switcher > * {
-  flex-grow: 2;
+  flex-grow: 1;
   flex-basis: calc((var(--switcher-container-min-width, 40rem) - 50.7%) * 999999);
   max-inline-size: 100%;
 }
