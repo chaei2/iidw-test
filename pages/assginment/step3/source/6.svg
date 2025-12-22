@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_빛" data-name="빛" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #ff0;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-2" d="M-4.09,257.77l34.11,3.69c179.43,19.43,376.25,20.25,574.07,2.41h0"/>
+    <path class="cls-2" d="M-4.09,138.15l34.11,3.69c179.43,19.43,376.25,20.25,574.07,2.41h0"/>
+    <path class="cls-2" d="M-4.09,242.95l34.11,3.69c179.43,19.43,376.25,20.25,574.07,2.41h0"/>
+    <path class="cls-2" d="M-4.09,123.33l34.11,3.69c179.43,19.43,376.25,20.25,574.07,2.41h0"/>
+  </g>
+  <polyline class="cls-1" points="38 146.12 67.58 244.09 168.89 168.02 273.65 256.95 388.97 161.27 509.96 255.61 602.84 149.36"/>
+</svg>
