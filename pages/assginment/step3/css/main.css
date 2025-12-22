@@ -98,11 +98,9 @@ textarea:not([rows]) {
   --fontA: Aldrich;
   --regular: 400;
   --space-s-l: 1rem;
-  --breakpoint-md-max: 46.25rem;
   --space-m-3xl: 2rem;
-  --colour-surface-0: #ffffff;
   --colour-tertiary: #666666;
-  --stroke-solid: 1px solid #000;
+  --stroke-solid: 0.5px solid #ffffff;
   --space-s: 0.5rem;
   --space-l: 1.5rem;
   --font-step-1: 1.25rem;
@@ -192,6 +190,8 @@ code {
   --switcher-container-min-width: calc(
     var(--breakpoint-md-max) - 2 * var(--space-m-3xl)
   );
+  --switcher-container-min-width: 30rem;
+  --gutter: 1rem;
   background: var(--colour-surface-0);
 }
 
@@ -223,20 +223,6 @@ code {
   overflow: clip;
 }
 @media (width < 55rem) {
-  .card {
-    display: grid;
-    grid-template-columns: 1fr minmax(0, 1.5fr);
-    gap: var(--space-xs);
-  }
-  .card__img {
-    aspect-ratio: 1/1;
-  }
-  .card__description {
-    max-height: 4lh;
-    overflow: clip;
-  }
-}
-@media (width < 33rem) {
   .card {
     display: unset;
   }
@@ -431,8 +417,6 @@ a {
 
 .copperImage {
   align-content: center;
-  height: auto;
-  max-height: 100%;
   opacity: 0.5;
 }
 
