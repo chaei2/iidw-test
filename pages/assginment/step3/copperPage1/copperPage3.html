@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="../js/cursor.js" defer></script>
+    <script src="../js/scoll.js" defer></script>
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>copper_원리 및 구조</title>
+  </head>
+  <body>
+    <!-- ㅇㄴ 왜 안되는건데 왜왜오애ㅐㄱ오애애액 -->
+    <!-- section-1 logo bar -->
+    <div class="section set1">
+      <div class="nevigation padding-1">
+        <div class="flex c-gap">
+          <div class="C fontF">C</div>
+
+          <img class="logo" src="../source/test_logo2.svg" alt="logo" />
+
+          <div class="F fontF">F</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-2 COPPER VS FIBER-->
+    <div class="section set2">
+      <div class="flex padding-2 border-bottom">
+        <div class="margin-in gap">
+          <h2 class="h1-text fontF blur">COPPER</h2>
+
+          <h3 class="h3-text fontF regular">원리 및 구조</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-3  -->
+    <div class="section set3">
+      <!-- 이미지 클릭 시, 페이지 넘키는 방법: a태그로 img 감싸면 됨 -->
+
+      <div class="card3 padding-4">
+        <h4 class="h4-text bold">구조와 물리적 특성</h4>
+        <img class="img-copper" src="../source/copper_one.svg" alt="구리단선" />
+
+        <div class="textBox flex paddingB">
+          <p class="p-text18 bold primary90">단선</p>
+          <ul>
+            <li class="p-text18 primary90">
+              한 가닥의 굵은 구리선으로 이루어진 케이블입니다.
+            </li>
+          </ul>
+        </div>
+
+        <div class="textBox flex">
+          <p class="p-text18 bold primary90">특징</p>
+          <ul>
+            <li class="p-text18 primary90">
+              금속의 전체 단면적이 꽉 차 있어 열이 고르게 분산됩니다.
+            </li>
+
+            <li class="p-text18 primary90">
+              더 많은 전류를 견딜 수 있어, 전력 소모가 큰 옥외 조명, 모터, 건물
+              전력 분배에 필수적입니다.
+            </li>
+          </ul>
+        </div>
+        <h4 class="h4-text"></h4>
+        <img class="img-copper" src="../source/copper_two.svg" alt="구리단선" />
+
+        <div class="textBox flex paddingB">
+          <p class="p-text18 bold primary90">연선</p>
+          <ul>
+            <li class="p-text18 primary90">
+              전선속에 구리가 여러가닥이 들어있는 케이블입니다.
+            </li>
+          </ul>
+        </div>
+
+        <div class="textBox flex">
+          <p class="p-text18 bold primary90">특징</p>
+          <ul>
+            <li class="p-text18 primary90">
+              가닥 사이사이에 공기층이 존재하여 실제 전기가 흐르는 단면적이
+              단선보다 작습니다.
+            </li>
+
+            <li class="p-text18 primary90">
+              노출된 표면적은 넓지만, 실제 전달할 수 있는 전체 전류량에는 제한이
+              생깁니다.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card3 padding-4">
+        <h4 class="h4-text bold paddingB">작동 원리</h4>
+        <video class="paddingB movie" src="../source/k.mp4" autoplay controls>
+          와전류
+        </video>
+        <!-- 1block -->
+
+        <div class="textBox stroke padding-3">
+          <p class="p-text18 bold primary90">표피 효과 (Skin Effect)</p>
+
+          <ul>
+            <li class="p-text18 primary90">
+              전류가 도체의 표면에만 집중되는 현상을 말합니다.
+            </li>
+          </ul>
+        </div>
+
+        <div class="textBox paddingU paddingB">
+          <!-- <p class="p-text18 bold primary90">특징</p>
+          <ul>
+            <li class="p-text18 primary90">
+              금속의 전체 단면적이 꽉 차 있어 열이 고르게 분산됩니다.
+            </li> -->
+
+          <!-- <li class="p-text18 primary90">
+              더 많은 전류를 견딜 수 있어, 전력 소모가 큰 옥외 조명, 모터, 건물
+              전력 분배에 필수적입니다.
+            </li> -->
+          <!-- </ul> -->
+        </div>
+        <h4 class="h4-text"></h4>
+        <!-- m -->
+        <video class="paddingB movie" src="../source/k_1.mp4" autoplay controls>
+          와전류
+        </video>
+
+        <div class="textBox paddingB">
+          <p class="p-text21 bold primary90">1. 왜 이런 현상이 발생하나요?</p>
+          <ul>
+            <li class="p-text18 primary90">
+              전류가 흐르면 그 주변에 자기장이 생깁니다. 중심부일수록 이
+              자기장의 영향을 강하게 받아 전류의 흐름을 방해하는
+              성질(역기전력)이 커집니다. 결국 전류는 저항이 가장 적은 도체의
+              가장자리로 밀려나게 됩니다.
+            </li>
+          </ul>
+        </div>
+
+        <div class="textBox">
+          <p class="p-text21 bold primary90">2. 표피 효과의 특징</p>
+          <ul>
+            <li class="p-text18 primary90">
+              주파수가 높을수록 심해짐: 통신 속도가 빨라진다는 것은 주파수가
+              높아진다는 뜻입니다. 주파수가 올라갈수록 전류는 더 얇은
+              표면층으로만 흐르려고 합니다.
+            </li>
+
+            <li class="p-text18 primary90">
+              유효 단면적 감소: 도체 전체를 다 쓰지 못하고 겉면만 쓰게 되어,
+              실제 전기가 흐르는 통로가 좁아집니다.
+            </li>
+
+            <li class="p-text18 primary90">
+              저항 증가: 통로가 좁아지니 당연히 저항이 커지고, 열이 발생하며
+              신호가 멀리 가지 못하고 약해져 감쇠현상이 일어납니다.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section set4">
+      <div class="grid-2">
+        <!-- <div></div> -->
+        <div class="information">
+          <p class="p-text18 c primary90">Font</p>
+          <p class="p-text16 c primary90">Aldrich</p>
+          <p class="p-text16 c primary90">출처</p>
+          <p class="p-text16 c primary90">출처</p>
+        </div>
+        <div class="information">
+          <p class="p-text18 c primary90">출처</p>
+          <p class="p-text16 c primary90">출처</p>
+          <p class="p-text16 c primary90">출처</p>
+          <p class="p-text16 c primary90">출처</p>
+        </div>
+        <div class="information max">
+          <p class="p-text18 c primary90">출처</p>
+          <p class="p-text16 c primary90">출처</p>
+          <p class="p-text16 c primary90">출처</p>
+          <p class="p-text16 c primary90">출처</p>
+        </div>
+        <!-- <div class="flex">
+          <div class="C fontF primary90">C</div>
+
+          <img class="logo2" src="./source/test_logo2.svg" alt="logo" />
+
+          <div class="F fontF primary90">F</div>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- section4 -->
+
+    <!-- cursor -->
+    <div id="custom-cursor"></div>
+  </body>
+</html>
