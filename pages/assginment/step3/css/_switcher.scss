@@ -52,6 +52,21 @@ code {
   }
 
   @include narrower-than('md') {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1.5fr);
+    gap: var(--space-xs);
+
+    &__img {
+      aspect-ratio: 1 / 1;
+    }
+
+    &__description {
+      max-height: 4lh;
+      overflow: clip;
+    }
+  }
+
+  @include narrower-than('sm') {
     display: unset;
   }
 }
