@@ -5,6 +5,7 @@
 @use './switcher';
 
 body {
+  // min-width: 530px;
   padding-bottom: 4.375rem;
   background: var(--BgGradient);
 }
@@ -32,7 +33,7 @@ body {
 
 .section {
   gap: 1rem;
-  padding: 0px 10em 0px 10em;
+  padding: 0 clamp(1rem, 5vw, 10em);
 }
 .flex {
   display: flex;
@@ -190,7 +191,7 @@ body {
   // width: fit-content;
   max-width: 1000px;
   // 내용만큼(= Hug)
-  margin-inline: auto;
+  // margin-inline: auto;
   // align-content: center;
 
   // (안전장치)
@@ -207,10 +208,10 @@ body {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  width: 303px;
+  width: auto;
   // height: 262px;
 
-  margin-inline: auto;
+  // margin-inline: auto;
   background-color: var(--cardBg);
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
