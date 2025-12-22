@@ -187,8 +187,8 @@ body {
 }
 
 .cards {
-  width: fit-content;
-  // min-width: 636px;
+  // width: fit-content;
+  max-width: 1000px;
   // 내용만큼(= Hug)
   margin-inline: auto;
   // align-content: center;
@@ -298,6 +298,24 @@ a {
   .card {
     transform: scale(0.7);
   }
+}
+
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, 1rem);
+  align-items: var(--switcher-vertical-alignment, flex-start);
+
+  --switcher-container-min-width: 30rem; // 여기 값으로 “언제 내려갈지” 조절
+  --gutter: 1rem;
+}
+// ㅇㄴ ㅜㅜㅜㅜ ㅜㅜㅜㅜㅜ ㅜㅜㅜㅜ  ㅜㅜㅜ 왜 안되는데
+.switcher > * {
+  flex-grow: 2;
+  flex-basis: calc(
+    (var(--switcher-container-min-width, 40rem) - 50.8%) * 999999
+  );
+  max-inline-size: 100%;
 }
 
 // gradient 변환 site: https://cssgradient.io

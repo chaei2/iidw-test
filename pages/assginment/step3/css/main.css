@@ -399,8 +399,7 @@ body {
 }
 
 .cards {
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 1000px;
   margin-inline: auto;
 }
 
@@ -487,4 +486,18 @@ a {
   .card {
     transform: scale(0.7);
   }
+}
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, 1rem);
+  align-items: var(--switcher-vertical-alignment, flex-start);
+  --switcher-container-min-width: 30rem;
+  --gutter: 1rem;
+}
+
+.switcher > * {
+  flex-grow: 2;
+  flex-basis: calc((var(--switcher-container-min-width, 40rem) - 50.8%) * 999999);
+  max-inline-size: 100%;
 }
