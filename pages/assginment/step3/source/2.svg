@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00f6ff;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        filter: url(#drop-shadow-2);
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        fill: #2f7cb0;
+      }
+
+      .cls-3 {
+        filter: url(#drop-shadow-6);
+      }
+
+      .cls-4 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-5 {
+        filter: url(#drop-shadow-3);
+      }
+
+      .cls-6 {
+        filter: url(#drop-shadow-4);
+      }
+
+      .cls-7 {
+        filter: url(#drop-shadow-5);
+      }
+
+      .cls-9 {
+        fill: #fff;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="7"/>
+      <feFlood flood-color="#1d1d99" flood-opacity=".2"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="0"/>
+      <feGaussianBlur result="blur-2" stdDeviation="7"/>
+      <feFlood flood-color="#1d1d99" flood-opacity=".2"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-3" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="0"/>
+      <feGaussianBlur result="blur-3" stdDeviation="7"/>
+      <feFlood flood-color="#1d1d99" flood-opacity=".2"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-4" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="0"/>
+      <feGaussianBlur result="blur-4" stdDeviation="7"/>
+      <feFlood flood-color="#1d1d99" flood-opacity=".2"/>
+      <feComposite in2="blur-4" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-5" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="0"/>
+      <feGaussianBlur result="blur-5" stdDeviation="7"/>
+      <feFlood flood-color="#1d1d99" flood-opacity=".2"/>
+      <feComposite in2="blur-5" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-6" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="0"/>
+      <feGaussianBlur result="blur-6" stdDeviation="7"/>
+      <feFlood flood-color="#1d1d99" flood-opacity=".2"/>
+      <feComposite in2="blur-6" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_선" data-name="선">
+    <rect class="cls-1" x="221.92" y="-216.83" width="18.56" height="323.17"/>
+    <rect class="cls-1" x="259.52" y="-216.83" width="18.56" height="323.17"/>
+  </g>
+  <g id="_커넥터" data-name="커넥터">
+    <g>
+      <rect class="cls-8" x="216.62" y="220.4" width="29.17" height="114.06"/>
+      <rect class="cls-8" x="254.22" y="220.4" width="29.17" height="114.06"/>
+      <rect class="cls-8" x="216.62" y="220.4" width="66.77" height="61.39"/>
+      <rect class="cls-4" x="216.62" y="220.4" width="66.77" height="30.69"/>
+      <rect class="cls-2" x="208.38" y="182.14" width="83.24" height="38.27"/>
+      <rect class="cls-5" x="197.82" y="278.91" width="66.77" height="11.13" transform="translate(515.68 53.28) rotate(90)"/>
+      <rect class="cls-6" x="235.42" y="278.91" width="66.77" height="11.13" transform="translate(553.28 15.68) rotate(90)"/>
+      <rect class="cls-7" x="286.91" y="247.57" width="3.57" height="10.63" transform="translate(541.58 -35.81) rotate(90)"/>
+      <rect class="cls-3" x="209.52" y="247.57" width="3.57" height="10.63" transform="translate(464.19 41.58) rotate(90)"/>
+    </g>
+    <g>
+      <path class="cls-9" d="M239.94,348.24c0,3.14-17.47,3.14-17.47,0v-13.77h17.47v13.77Z"/>
+      <path class="cls-9" d="M277.54,348.24c0,3.14-17.47,3.14-17.47,0v-13.77h17.47v13.77Z"/>
+    </g>
+    <polygon class="cls-8" points="245.44 182.14 216.96 182.14 220.29 106.34 242.11 106.34 245.44 182.14"/>
+    <polygon class="cls-8" points="283.04 182.14 254.56 182.14 257.89 106.34 279.71 106.34 283.04 182.14"/>
+  </g>
+</svg>

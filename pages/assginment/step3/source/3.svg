@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-10, .cls-11, .cls-12, .cls-13 {
+        fill: #c1c1c1;
+      }
+
+      .cls-2 {
+        fill: #00f6ff;
+      }
+
+      .cls-3 {
+        fill: #ffff20;
+      }
+
+      .cls-4 {
+        filter: url(#drop-shadow-8);
+      }
+
+      .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        fill: #60d750;
+      }
+
+      .cls-5 {
+        filter: url(#drop-shadow-2);
+      }
+
+      .cls-6 {
+        filter: url(#drop-shadow-6);
+      }
+
+      .cls-7 {
+        filter: url(#drop-shadow-4);
+      }
+
+      .cls-9 {
+        fill: #ff4141;
+      }
+
+      .cls-10 {
+        filter: url(#drop-shadow-5);
+      }
+
+      .cls-11 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-12 {
+        filter: url(#drop-shadow-3);
+      }
+
+      .cls-13 {
+        filter: url(#drop-shadow-7);
+      }
+
+      .cls-14 {
+        fill: #9b9b9b;
+      }
+
+      .cls-15 {
+        fill: #aeffc7;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="7"/>
+      <feFlood flood-color="#1d1d99" flood-opacity=".2"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="0"/>
+      <feGaussianBlur result="blur-2" stdDeviation="7"/>
+      <feFlood flood-color="#1d1d99" flood-opacity=".2"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-3" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="0"/>
+      <feGaussianBlur result="blur-3" stdDeviation="7"/>
+      <feFlood flood-color="#1d1d99" flood-opacity=".2"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-4" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="0"/>
+      <feGaussianBlur result="blur-4" stdDeviation="7"/>
+      <feFlood flood-color="#1d1d99" flood-opacity=".2"/>
+      <feComposite in2="blur-4" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-5" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="0"/>
+      <feGaussianBlur result="blur-5" stdDeviation="7"/>
+      <feFlood flood-color="#1d1d99" flood-opacity=".2"/>
+      <feComposite in2="blur-5" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-6" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="0"/>
+      <feGaussianBlur result="blur-6" stdDeviation="7"/>
+      <feFlood flood-color="#1d1d99" flood-opacity=".2"/>
+      <feComposite in2="blur-6" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-7" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="0"/>
+      <feGaussianBlur result="blur-7" stdDeviation="7"/>
+      <feFlood flood-color="#1d1d99" flood-opacity=".2"/>
+      <feComposite in2="blur-7" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-8" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="0"/>
+      <feGaussianBlur result="blur-8" stdDeviation="7"/>
+      <feFlood flood-color="#1d1d99" flood-opacity=".2"/>
+      <feComposite in2="blur-8" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <polygon class="cls-15" points="117.63 126.34 99.08 126.34 250 0 250 0 117.63 126.34"/>
+  <polygon class="cls-9" points="212.06 126.34 193.51 126.34 250 0 250 0 212.06 126.34"/>
+  <polygon class="cls-3" points="306.49 126.34 287.94 126.34 250 0 250 0 306.49 126.34"/>
+  <polygon class="cls-2" points="400.92 126.34 382.37 126.34 250 0 250 0 400.92 126.34"/>
+  <g>
+    <polygon class="cls-8" points="413.89 240.4 371.04 240.4 376.04 126.34 408.89 126.34 413.89 240.4"/>
+    <g>
+      <rect class="cls-8" x="366.94" y="323.11" width="51.06" height="30.57"/>
+      <path class="cls-8" d="M402.69,384.25c0,6.96-20.46,6.96-20.46,0v-30.57h20.46v30.57Z"/>
+    </g>
+    <rect class="cls-11" x="375.33" y="226.55" width="34.27" height="61.98" transform="translate(650 -134.93) rotate(90)"/>
+    <rect class="cls-5" x="375.33" y="309.25" width="34.27" height="61.98" transform="translate(732.71 -52.22) rotate(90)"/>
+    <g>
+      <rect class="cls-14" x="359.85" y="289.09" width="23.34" height="4.28"/>
+      <rect class="cls-14" x="401.74" y="289.09" width="23.34" height="4.28"/>
+      <rect class="cls-1" x="359.85" y="274.67" width="65.24" height="65.57"/>
+    </g>
+  </g>
+  <g>
+    <polygon class="cls-8" points="318.54 240.4 275.69 240.4 280.69 126.34 313.54 126.34 318.54 240.4"/>
+    <g>
+      <rect class="cls-8" x="271.58" y="323.11" width="51.06" height="30.57"/>
+      <path class="cls-8" d="M307.34,384.25c0,6.96-20.46,6.96-20.46,0v-30.57h20.46v30.57Z"/>
+    </g>
+    <rect class="cls-12" x="279.98" y="226.55" width="34.27" height="61.98" transform="translate(554.65 -39.57) rotate(90)"/>
+    <rect class="cls-7" x="279.98" y="309.25" width="34.27" height="61.98" transform="translate(637.36 43.13) rotate(90)"/>
+    <g>
+      <rect class="cls-14" x="264.49" y="289.09" width="23.34" height="4.28"/>
+      <rect class="cls-14" x="306.39" y="289.09" width="23.34" height="4.28"/>
+      <rect class="cls-1" x="264.49" y="274.67" width="65.24" height="65.57"/>
+    </g>
+  </g>
+  <g>
+    <polygon class="cls-8" points="223.18 240.4 180.34 240.4 185.34 126.34 218.18 126.34 223.18 240.4"/>
+    <g>
+      <rect class="cls-8" x="176.23" y="323.11" width="51.06" height="30.57"/>
+      <path class="cls-8" d="M211.99,384.25c0,6.96-20.46,6.96-20.46,0v-30.57h20.46v30.57Z"/>
+    </g>
+    <rect class="cls-10" x="184.63" y="226.55" width="34.27" height="61.98" transform="translate(459.3 55.78) rotate(90)"/>
+    <rect class="cls-6" x="184.63" y="309.25" width="34.27" height="61.98" transform="translate(542.01 138.48) rotate(90)"/>
+    <g>
+      <rect class="cls-14" x="169.14" y="289.09" width="23.34" height="4.28"/>
+      <rect class="cls-14" x="211.04" y="289.09" width="23.34" height="4.28"/>
+      <rect class="cls-1" x="169.14" y="274.67" width="65.24" height="65.57"/>
+    </g>
+  </g>
+  <g>
+    <polygon class="cls-8" points="127.83 240.4 84.98 240.4 89.98 126.34 122.83 126.34 127.83 240.4"/>
+    <g>
+      <rect class="cls-8" x="80.88" y="323.11" width="51.06" height="30.57"/>
+      <path class="cls-8" d="M116.64,384.25c0,6.96-20.46,6.96-20.46,0v-30.57h20.46v30.57Z"/>
+    </g>
+    <rect class="cls-13" x="89.27" y="226.55" width="34.27" height="61.98" transform="translate(363.95 151.13) rotate(90)"/>
+    <rect class="cls-4" x="89.27" y="309.25" width="34.27" height="61.98" transform="translate(446.65 233.84) rotate(90)"/>
+    <g>
+      <rect class="cls-14" x="73.79" y="289.09" width="23.34" height="4.28"/>
+      <rect class="cls-14" x="115.69" y="289.09" width="23.34" height="4.28"/>
+      <rect class="cls-1" x="73.79" y="274.67" width="65.24" height="65.57"/>
+    </g>
+  </g>
+</svg>

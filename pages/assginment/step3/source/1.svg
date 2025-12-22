@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffff20;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #2f7cb0;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="7"/>
+      <feFlood flood-color="#1d1d99" flood-opacity=".2"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_선" data-name="선">
+    <rect class="cls-1" x="240.72" y="-216.83" width="18.56" height="323.17"/>
+  </g>
+  <g id="_커넥터" data-name="커넥터">
+    <g>
+      <polygon class="cls-3" points="271.42 220.4 228.58 220.4 233.58 106.34 266.42 106.34 271.42 220.4"/>
+      <g>
+        <rect class="cls-4" x="224.47" y="334.46" width="51.06" height="16.13"/>
+        <path class="cls-4" d="M260.23,366.72c0,3.67-20.46,3.67-20.46,0v-16.13h20.46v16.13Z"/>
+      </g>
+      <rect class="cls-2" x="232.87" y="206.55" width="34.27" height="61.98" transform="translate(487.54 -12.46) rotate(90)"/>
+      <g>
+        <rect class="cls-3" x="217.38" y="254.67" width="65.24" height="79.79"/>
+        <rect class="cls-4" x="217.38" y="272.22" width="23.34" height="5.21"/>
+        <rect class="cls-4" x="259.28" y="272.22" width="23.34" height="5.21"/>
+      </g>
+    </g>
+  </g>
+</svg>
