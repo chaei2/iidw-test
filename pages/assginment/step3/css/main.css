@@ -441,6 +441,9 @@ a {
   .koH4-text {
     font-size: 17.5px;
   }
+  .card:hover {
+    transform: scale(0.9);
+  }
   .card {
     transform: scale(0.8);
   }
@@ -460,6 +463,9 @@ a {
   }
   .koH4-text {
     font-size: 15px;
+  }
+  .card:hover {
+    transform: scale(0.8);
   }
   .card {
     transform: scale(0.7);
