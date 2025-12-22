@@ -9,6 +9,10 @@ body {
 }
 
 // -----전역 class-----
+.bold {
+  font-weight: bold;
+}
+
 .primary90 {
   color: var(--primary90);
 }
@@ -167,17 +171,19 @@ body {
   text-align: center;
 }
 
-.p-text {
-  font-size: 18.5px;
-  font-weight: bold;
+.p-text21 {
+  font-size: 21.5px;
+}
+.p-text18 {
+  font-size: 18px;
 }
 
 .cards {
-  // align-content: center;
   width: fit-content;
   // min-width: 636px;
   // 내용만큼(= Hug)
   margin-inline: auto;
+  // align-content: center;
 
   // (안전장치)
   // padding: 0px 120px 0px 120px;
@@ -190,6 +196,7 @@ body {
   justify-content: center;
   width: 303px;
   height: 262px;
+
   margin-inline: auto;
   background-color: var(--cardBg);
   border-radius: 5%;
