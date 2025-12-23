@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00ff2a;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="_게이지" data-name="게이지">
+    <rect class="cls-1" x="180.41" y="510.1" width="339.18" height="60" rx="30" ry="30"/>
+  </g>
+  <g id="_선" data-name="선">
+    <rect class="cls-2" x="180.41" y="129.9" width="339.18" height="440.21" rx="30" ry="30"/>
+  </g>
+</svg>
