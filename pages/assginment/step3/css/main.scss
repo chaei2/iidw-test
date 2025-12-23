@@ -78,9 +78,24 @@ body {
 
 // -----지역 class-----
 // section-1 nevigation
+a {
+  text-decoration: none;
+}
 
+.botton { 
+}
 // nevigation문제는 일단 나중에 해결해...
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* width: 100% */
+  left: 0;
+}
 
+.bg {
+  background-color: var(--BgGradient);
+}
 .nevigation {
   // .p {
   .flex {
