@@ -320,6 +320,10 @@ a {
   text-decoration: none;
 }
 
+.botton {
+  display: inline;
+}
+
 .fixed {
   position: fixed;
   top: 0;
